@@ -1,0 +1,666 @@
+{
+  "type": "FeatureCollection",
+  "name": "roads",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "R001",
+        "road_type": "prototype_connector",
+        "source_status": "synthetic_prototype",
+        "source_note": "Not real road geometry; replace with OSM/official road network."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            92.07446280108965,
+            25.55928629931553
+          ],
+          [
+            90.7569630006164,
+            25.566627669602774
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "R002",
+        "road_type": "prototype_connector",
+        "source_status": "synthetic_prototype",
+        "source_note": "Not real road geometry; replace with OSM/official road network."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            92.74128896715835,
+            25.322588301256
+          ],
+          [
+            91.55650362612114,
+            25.993178006098866
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "R003",
+        "road_type": "prototype_connector",
+        "source_status": "synthetic_prototype",
+        "source_note": "Not real road geometry; replace with OSM/official road network."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            92.28688201546994,
+            25.36657634594559
+          ],
+          [
+            91.41821917294658,
+            25.432430101516502
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "R004",
+        "road_type": "prototype_connector",
+        "source_status": "synthetic_prototype",
+        "source_note": "Not real road geometry; replace with OSM/official road network."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            90.20591710486117,
+            25.68822029900285
+          ],
+          [
+            90.69209917807052,
+            25.848716193788547
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "R005",
+        "road_type": "prototype_connector",
+        "source_status": "synthetic_prototype",
+        "source_note": "Not real road geometry; replace with OSM/official road network."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.25386620753909,
+            25.471234258386055
+          ],
+          [
+            91.36237924779829,
+            25.775036722800444
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "R006",
+        "road_type": "prototype_connector",
+        "source_status": "synthetic_prototype",
+        "source_note": "Not real road geometry; replace with OSM/official road network."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            90.10602999629187,
+            25.5247889635992
+          ],
+          [
+            90.46975962516039,
+            25.84401403418537
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "R007",
+        "road_type": "prototype_connector",
+        "source_status": "synthetic_prototype",
+        "source_note": "Not real road geometry; replace with OSM/official road network."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            90.36652872251142,
+            25.877851292532206
+          ],
+          [
+            90.49882500214994,
+            25.824377773643082
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "R008",
+        "road_type": "prototype_connector",
+        "source_status": "synthetic_prototype",
+        "source_note": "Not real road geometry; replace with OSM/official road network."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            92.11794080898862,
+            25.887857512723794
+          ],
+          [
+            90.13142393197165,
+            25.36741207934335
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "R009",
+        "road_type": "prototype_connector",
+        "source_status": "synthetic_prototype",
+        "source_note": "Not real road geometry; replace with OSM/official road network."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            90.48697705322382,
+            25.413995219879283
+          ],
+          [
+            90.23857595457292,
+            25.33756314408697
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "R010",
+        "road_type": "prototype_connector",
+        "source_status": "synthetic_prototype",
+        "source_note": "Not real road geometry; replace with OSM/official road network."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.89296376098034,
+            25.62321270760341
+          ],
+          [
+            91.90289891107265,
+            25.358129473558034
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "R011",
+        "road_type": "prototype_connector",
+        "source_status": "synthetic_prototype",
+        "source_note": "Not real road geometry; replace with OSM/official road network."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.28717609986641,
+            25.47737631257841
+          ],
+          [
+            90.79689898148371,
+            25.625577330109905
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "R012",
+        "road_type": "prototype_connector",
+        "source_status": "synthetic_prototype",
+        "source_note": "Not real road geometry; replace with OSM/official road network."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            90.63919728540809,
+            25.170888933137007
+          ],
+          [
+            91.27631198316577,
+            25.43940631499696
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "R013",
+        "road_type": "prototype_connector",
+        "source_status": "synthetic_prototype",
+        "source_note": "Not real road geometry; replace with OSM/official road network."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            92.39255332381077,
+            25.252637068281444
+          ],
+          [
+            91.69832394398904,
+            25.78040248466262
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "R014",
+        "road_type": "prototype_connector",
+        "source_status": "synthetic_prototype",
+        "source_note": "Not real road geometry; replace with OSM/official road network."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            90.13902223379591,
+            25.399412608686212
+          ],
+          [
+            90.68557115623524,
+            25.20881381368955
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "R015",
+        "road_type": "prototype_connector",
+        "source_status": "synthetic_prototype",
+        "source_note": "Not real road geometry; replace with OSM/official road network."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            90.46071130489585,
+            25.4715711097328
+          ],
+          [
+            92.05841607808819,
+            25.270866749206558
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "R016",
+        "road_type": "prototype_connector",
+        "source_status": "synthetic_prototype",
+        "source_note": "Not real road geometry; replace with OSM/official road network."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            92.22304687436731,
+            25.366105730869233
+          ],
+          [
+            92.3530673650834,
+            25.376552504853063
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "R017",
+        "road_type": "prototype_connector",
+        "source_status": "synthetic_prototype",
+        "source_note": "Not real road geometry; replace with OSM/official road network."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            92.53222473687833,
+            25.436427945350644
+          ],
+          [
+            91.42278359215435,
+            25.61379626776052
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "R018",
+        "road_type": "prototype_connector",
+        "source_status": "synthetic_prototype",
+        "source_note": "Not real road geometry; replace with OSM/official road network."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            90.66334283187857,
+            25.880286820347848
+          ],
+          [
+            92.45108650075689,
+            25.15908126306465
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "R019",
+        "road_type": "prototype_connector",
+        "source_status": "synthetic_prototype",
+        "source_note": "Not real road geometry; replace with OSM/official road network."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            90.96289387679934,
+            25.605785703796524
+          ],
+          [
+            90.57894907558666,
+            25.234615326752756
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "R020",
+        "road_type": "prototype_connector",
+        "source_status": "synthetic_prototype",
+        "source_note": "Not real road geometry; replace with OSM/official road network."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            90.54192966807761,
+            25.199803204036634
+          ],
+          [
+            91.57623283249237,
+            25.156400222463407
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "R021",
+        "road_type": "prototype_connector",
+        "source_status": "synthetic_prototype",
+        "source_note": "Not real road geometry; replace with OSM/official road network."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            90.41203361575148,
+            25.957387310294532
+          ],
+          [
+            92.19461043551023,
+            25.242399072364275
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "R022",
+        "road_type": "prototype_connector",
+        "source_status": "synthetic_prototype",
+        "source_note": "Not real road geometry; replace with OSM/official road network."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.29778945765736,
+            25.724735438540662
+          ],
+          [
+            92.51094999950351,
+            25.485944184424053
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "R023",
+        "road_type": "prototype_connector",
+        "source_status": "synthetic_prototype",
+        "source_note": "Not real road geometry; replace with OSM/official road network."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            92.67566251390502,
+            25.32005883976677
+          ],
+          [
+            90.27997922815811,
+            25.79897840955804
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "R024",
+        "road_type": "prototype_connector",
+        "source_status": "synthetic_prototype",
+        "source_note": "Not real road geometry; replace with OSM/official road network."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            89.97019750713163,
+            25.65832360862027
+          ],
+          [
+            89.88520769182729,
+            25.429107788386766
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "R025",
+        "road_type": "prototype_connector",
+        "source_status": "synthetic_prototype",
+        "source_note": "Not real road geometry; replace with OSM/official road network."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.65407040802326,
+            25.842681460895058
+          ],
+          [
+            91.65558252330754,
+            25.917144627505277
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "R026",
+        "road_type": "prototype_connector",
+        "source_status": "synthetic_prototype",
+        "source_note": "Not real road geometry; replace with OSM/official road network."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.92152722913005,
+            25.276699204302933
+          ],
+          [
+            91.15770773820562,
+            25.44228780037022
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "R027",
+        "road_type": "prototype_connector",
+        "source_status": "synthetic_prototype",
+        "source_note": "Not real road geometry; replace with OSM/official road network."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.72970102261226,
+            25.904513925592
+          ],
+          [
+            92.12490398469345,
+            25.960671061272432
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "R028",
+        "road_type": "prototype_connector",
+        "source_status": "synthetic_prototype",
+        "source_note": "Not real road geometry; replace with OSM/official road network."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.64922921095291,
+            25.302018281363985
+          ],
+          [
+            92.35485348925933,
+            25.158705122742177
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "R029",
+        "road_type": "prototype_connector",
+        "source_status": "synthetic_prototype",
+        "source_note": "Not real road geometry; replace with OSM/official road network."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            90.29502472648981,
+            25.929670541076973
+          ],
+          [
+            90.41929272013354,
+            25.356471223791548
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "R030",
+        "road_type": "prototype_connector",
+        "source_status": "synthetic_prototype",
+        "source_note": "Not real road geometry; replace with OSM/official road network."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.19900022574822,
+            25.715568937611845
+          ],
+          [
+            90.13752515032145,
+            25.731248201989324
+          ]
+        ]
+      }
+    }
+  ]
+}

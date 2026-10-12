@@ -1,0 +1,2406 @@
+{
+  "type": "FeatureCollection",
+  "name": "candidate_sites",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S001",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 6.456934140120763,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              92.07146280108965,
+              25.55628629931553
+            ],
+            [
+              92.07746280108965,
+              25.55628629931553
+            ],
+            [
+              92.07746280108965,
+              25.56228629931553
+            ],
+            [
+              92.07146280108965,
+              25.56228629931553
+            ],
+            [
+              92.07146280108965,
+              25.55628629931553
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S002",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 5.3247853342454174,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              90.7539630006164,
+              25.563627669602774
+            ],
+            [
+              90.7599630006164,
+              25.563627669602774
+            ],
+            [
+              90.7599630006164,
+              25.569627669602774
+            ],
+            [
+              90.7539630006164,
+              25.569627669602774
+            ],
+            [
+              90.7539630006164,
+              25.563627669602774
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S003",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 3.544197644433137,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              92.73828896715835,
+              25.319588301256
+            ],
+            [
+              92.74428896715835,
+              25.319588301256
+            ],
+            [
+              92.74428896715835,
+              25.325588301256
+            ],
+            [
+              92.73828896715835,
+              25.325588301256
+            ],
+            [
+              92.73828896715835,
+              25.319588301256
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S004",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 4.9955779268275,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.55350362612114,
+              25.990178006098866
+            ],
+            [
+              91.55950362612114,
+              25.990178006098866
+            ],
+            [
+              91.55950362612114,
+              25.996178006098866
+            ],
+            [
+              91.55350362612114,
+              25.996178006098866
+            ],
+            [
+              91.55350362612114,
+              25.990178006098866
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S005",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 3.4253193547409064,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              92.28388201546994,
+              25.36357634594559
+            ],
+            [
+              92.28988201546994,
+              25.36357634594559
+            ],
+            [
+              92.28988201546994,
+              25.36957634594559
+            ],
+            [
+              92.28388201546994,
+              25.36957634594559
+            ],
+            [
+              92.28388201546994,
+              25.36357634594559
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S006",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 5.305427518320515,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.41521917294658,
+              25.429430101516502
+            ],
+            [
+              91.42121917294658,
+              25.429430101516502
+            ],
+            [
+              91.42121917294658,
+              25.435430101516502
+            ],
+            [
+              91.41521917294658,
+              25.435430101516502
+            ],
+            [
+              91.41521917294658,
+              25.429430101516502
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S007",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 6.239200676590308,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              90.20291710486117,
+              25.68522029900285
+            ],
+            [
+              90.20891710486117,
+              25.68522029900285
+            ],
+            [
+              90.20891710486117,
+              25.69122029900285
+            ],
+            [
+              90.20291710486117,
+              25.69122029900285
+            ],
+            [
+              90.20291710486117,
+              25.68522029900285
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S008",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 6.239200676590308,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              90.68909917807052,
+              25.845716193788547
+            ],
+            [
+              90.69509917807052,
+              25.845716193788547
+            ],
+            [
+              90.69509917807052,
+              25.851716193788548
+            ],
+            [
+              90.68909917807052,
+              25.851716193788548
+            ],
+            [
+              90.68909917807052,
+              25.845716193788547
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S009",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 3.174102423735559,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.25086620753909,
+              25.468234258386055
+            ],
+            [
+              91.25686620753909,
+              25.468234258386055
+            ],
+            [
+              91.25686620753909,
+              25.474234258386055
+            ],
+            [
+              91.25086620753909,
+              25.474234258386055
+            ],
+            [
+              91.25086620753909,
+              25.468234258386055
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S010",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 4.472752508115072,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.35937924779829,
+              25.772036722800443
+            ],
+            [
+              91.36537924779829,
+              25.772036722800443
+            ],
+            [
+              91.36537924779829,
+              25.778036722800444
+            ],
+            [
+              91.35937924779829,
+              25.778036722800444
+            ],
+            [
+              91.35937924779829,
+              25.772036722800443
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S011",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 4.472752508115072,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              90.10302999629187,
+              25.5217889635992
+            ],
+            [
+              90.10902999629187,
+              25.5217889635992
+            ],
+            [
+              90.10902999629187,
+              25.5277889635992
+            ],
+            [
+              90.10302999629187,
+              25.5277889635992
+            ],
+            [
+              90.10302999629187,
+              25.5217889635992
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S012",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 6.239200676590308,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              90.46675962516039,
+              25.84101403418537
+            ],
+            [
+              90.47275962516039,
+              25.84101403418537
+            ],
+            [
+              90.47275962516039,
+              25.84701403418537
+            ],
+            [
+              90.46675962516039,
+              25.84701403418537
+            ],
+            [
+              90.46675962516039,
+              25.84101403418537
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S013",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 6.239200676590308,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              90.36352872251142,
+              25.874851292532206
+            ],
+            [
+              90.36952872251142,
+              25.874851292532206
+            ],
+            [
+              90.36952872251142,
+              25.880851292532206
+            ],
+            [
+              90.36352872251142,
+              25.880851292532206
+            ],
+            [
+              90.36352872251142,
+              25.874851292532206
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S014",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 8.037903096553412,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              90.49582500214994,
+              25.821377773643082
+            ],
+            [
+              90.50182500214994,
+              25.821377773643082
+            ],
+            [
+              90.50182500214994,
+              25.827377773643082
+            ],
+            [
+              90.49582500214994,
+              25.827377773643082
+            ],
+            [
+              90.49582500214994,
+              25.821377773643082
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S015",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 8.037903096553412,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              92.11494080898862,
+              25.884857512723794
+            ],
+            [
+              92.12094080898862,
+              25.884857512723794
+            ],
+            [
+              92.12094080898862,
+              25.890857512723795
+            ],
+            [
+              92.11494080898862,
+              25.890857512723795
+            ],
+            [
+              92.11494080898862,
+              25.884857512723794
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S016",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 8.037903096553412,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              90.12842393197165,
+              25.36441207934335
+            ],
+            [
+              90.13442393197165,
+              25.36441207934335
+            ],
+            [
+              90.13442393197165,
+              25.37041207934335
+            ],
+            [
+              90.12842393197165,
+              25.37041207934335
+            ],
+            [
+              90.12842393197165,
+              25.36441207934335
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S017",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 6.496428056880213,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              90.48397705322382,
+              25.410995219879283
+            ],
+            [
+              90.48997705322383,
+              25.410995219879283
+            ],
+            [
+              90.48997705322383,
+              25.416995219879283
+            ],
+            [
+              90.48397705322382,
+              25.416995219879283
+            ],
+            [
+              90.48397705322382,
+              25.410995219879283
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S018",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 0.4562317336796926,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              90.23557595457292,
+              25.33456314408697
+            ],
+            [
+              90.24157595457292,
+              25.33456314408697
+            ],
+            [
+              90.24157595457292,
+              25.34056314408697
+            ],
+            [
+              90.23557595457292,
+              25.34056314408697
+            ],
+            [
+              90.23557595457292,
+              25.33456314408697
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S019",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 0.72134284201982,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.88996376098034,
+              25.62021270760341
+            ],
+            [
+              91.89596376098034,
+              25.62021270760341
+            ],
+            [
+              91.89596376098034,
+              25.62621270760341
+            ],
+            [
+              91.88996376098034,
+              25.62621270760341
+            ],
+            [
+              91.88996376098034,
+              25.62021270760341
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S020",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 8.897310740980094,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.89989891107265,
+              25.355129473558033
+            ],
+            [
+              91.90589891107265,
+              25.355129473558033
+            ],
+            [
+              91.90589891107265,
+              25.361129473558034
+            ],
+            [
+              91.89989891107265,
+              25.361129473558034
+            ],
+            [
+              91.89989891107265,
+              25.355129473558033
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S021",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 0.0,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.28417609986641,
+              25.47437631257841
+            ],
+            [
+              91.29017609986641,
+              25.47437631257841
+            ],
+            [
+              91.29017609986641,
+              25.48037631257841
+            ],
+            [
+              91.28417609986641,
+              25.48037631257841
+            ],
+            [
+              91.28417609986641,
+              25.47437631257841
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S022",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 0.0,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              90.79389898148371,
+              25.622577330109905
+            ],
+            [
+              90.79989898148371,
+              25.622577330109905
+            ],
+            [
+              90.79989898148371,
+              25.628577330109906
+            ],
+            [
+              90.79389898148371,
+              25.628577330109906
+            ],
+            [
+              90.79389898148371,
+              25.622577330109905
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S023",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 0.72134284201982,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              90.63619728540809,
+              25.167888933137007
+            ],
+            [
+              90.64219728540809,
+              25.167888933137007
+            ],
+            [
+              90.64219728540809,
+              25.173888933137007
+            ],
+            [
+              90.63619728540809,
+              25.173888933137007
+            ],
+            [
+              90.63619728540809,
+              25.167888933137007
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S024",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 0.72134284201982,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.27331198316577,
+              25.436406314996958
+            ],
+            [
+              91.27931198316577,
+              25.436406314996958
+            ],
+            [
+              91.27931198316577,
+              25.44240631499696
+            ],
+            [
+              91.27331198316577,
+              25.44240631499696
+            ],
+            [
+              91.27331198316577,
+              25.436406314996958
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S025",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 0.4562317336796926,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              92.38955332381077,
+              25.249637068281444
+            ],
+            [
+              92.39555332381077,
+              25.249637068281444
+            ],
+            [
+              92.39555332381077,
+              25.255637068281445
+            ],
+            [
+              92.38955332381077,
+              25.255637068281445
+            ],
+            [
+              92.38955332381077,
+              25.249637068281444
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S026",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 3.3642897967477032,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.69532394398904,
+              25.77740248466262
+            ],
+            [
+              91.70132394398904,
+              25.77740248466262
+            ],
+            [
+              91.70132394398904,
+              25.78340248466262
+            ],
+            [
+              91.69532394398904,
+              25.78340248466262
+            ],
+            [
+              91.69532394398904,
+              25.77740248466262
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S027",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 3.3642897967477032,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              90.13602223379591,
+              25.396412608686212
+            ],
+            [
+              90.14202223379591,
+              25.396412608686212
+            ],
+            [
+              90.14202223379591,
+              25.402412608686213
+            ],
+            [
+              90.13602223379591,
+              25.402412608686213
+            ],
+            [
+              90.13602223379591,
+              25.396412608686212
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S028",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 8.696701556302015,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              90.68257115623524,
+              25.20581381368955
+            ],
+            [
+              90.68857115623524,
+              25.20581381368955
+            ],
+            [
+              90.68857115623524,
+              25.21181381368955
+            ],
+            [
+              90.68257115623524,
+              25.21181381368955
+            ],
+            [
+              90.68257115623524,
+              25.20581381368955
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S029",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 9.466774958366958,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              90.45771130489585,
+              25.4685711097328
+            ],
+            [
+              90.46371130489585,
+              25.4685711097328
+            ],
+            [
+              90.46371130489585,
+              25.4745711097328
+            ],
+            [
+              90.45771130489585,
+              25.4745711097328
+            ],
+            [
+              90.45771130489585,
+              25.4685711097328
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S030",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 2.918842567673696,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              92.05541607808819,
+              25.267866749206558
+            ],
+            [
+              92.06141607808819,
+              25.267866749206558
+            ],
+            [
+              92.06141607808819,
+              25.273866749206558
+            ],
+            [
+              92.05541607808819,
+              25.273866749206558
+            ],
+            [
+              92.05541607808819,
+              25.267866749206558
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S031",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 0.4562317336796926,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              92.22004687436731,
+              25.363105730869233
+            ],
+            [
+              92.22604687436731,
+              25.363105730869233
+            ],
+            [
+              92.22604687436731,
+              25.369105730869233
+            ],
+            [
+              92.22004687436731,
+              25.369105730869233
+            ],
+            [
+              92.22004687436731,
+              25.363105730869233
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S032",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 8.037903096553412,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              92.3500673650834,
+              25.373552504853063
+            ],
+            [
+              92.3560673650834,
+              25.373552504853063
+            ],
+            [
+              92.3560673650834,
+              25.379552504853063
+            ],
+            [
+              92.3500673650834,
+              25.379552504853063
+            ],
+            [
+              92.3500673650834,
+              25.373552504853063
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S033",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 8.037903096553412,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              92.52922473687833,
+              25.433427945350644
+            ],
+            [
+              92.53522473687833,
+              25.433427945350644
+            ],
+            [
+              92.53522473687833,
+              25.439427945350644
+            ],
+            [
+              92.52922473687833,
+              25.439427945350644
+            ],
+            [
+              92.52922473687833,
+              25.433427945350644
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S034",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 8.037903096553412,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.41978359215435,
+              25.61079626776052
+            ],
+            [
+              91.42578359215435,
+              25.61079626776052
+            ],
+            [
+              91.42578359215435,
+              25.61679626776052
+            ],
+            [
+              91.41978359215435,
+              25.61679626776052
+            ],
+            [
+              91.41978359215435,
+              25.61079626776052
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S035",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 8.037903096553412,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              90.66034283187857,
+              25.877286820347848
+            ],
+            [
+              90.66634283187857,
+              25.877286820347848
+            ],
+            [
+              90.66634283187857,
+              25.88328682034785
+            ],
+            [
+              90.66034283187857,
+              25.88328682034785
+            ],
+            [
+              90.66034283187857,
+              25.877286820347848
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S036",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 8.037903096553412,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              92.44808650075689,
+              25.15608126306465
+            ],
+            [
+              92.45408650075689,
+              25.15608126306465
+            ],
+            [
+              92.45408650075689,
+              25.16208126306465
+            ],
+            [
+              92.44808650075689,
+              25.16208126306465
+            ],
+            [
+              92.44808650075689,
+              25.15608126306465
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S037",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 8.037903096553412,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              90.95989387679934,
+              25.602785703796524
+            ],
+            [
+              90.96589387679934,
+              25.602785703796524
+            ],
+            [
+              90.96589387679934,
+              25.608785703796524
+            ],
+            [
+              90.95989387679934,
+              25.608785703796524
+            ],
+            [
+              90.95989387679934,
+              25.602785703796524
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S038",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 5.616109751664109,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              90.57594907558666,
+              25.231615326752756
+            ],
+            [
+              90.58194907558666,
+              25.231615326752756
+            ],
+            [
+              90.58194907558666,
+              25.237615326752756
+            ],
+            [
+              90.57594907558666,
+              25.237615326752756
+            ],
+            [
+              90.57594907558666,
+              25.231615326752756
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S039",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 1.4424570861239596,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              90.53892966807761,
+              25.196803204036634
+            ],
+            [
+              90.54492966807761,
+              25.196803204036634
+            ],
+            [
+              90.54492966807761,
+              25.202803204036634
+            ],
+            [
+              90.53892966807761,
+              25.202803204036634
+            ],
+            [
+              90.53892966807761,
+              25.196803204036634
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S040",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 12.68114575219322,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.57323283249237,
+              25.153400222463407
+            ],
+            [
+              91.57923283249237,
+              25.153400222463407
+            ],
+            [
+              91.57923283249237,
+              25.159400222463407
+            ],
+            [
+              91.57323283249237,
+              25.159400222463407
+            ],
+            [
+              91.57323283249237,
+              25.153400222463407
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S041",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 15.399732829380593,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              90.40903361575148,
+              25.954387310294532
+            ],
+            [
+              90.41503361575148,
+              25.954387310294532
+            ],
+            [
+              90.41503361575148,
+              25.960387310294532
+            ],
+            [
+              90.40903361575148,
+              25.960387310294532
+            ],
+            [
+              90.40903361575148,
+              25.954387310294532
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S042",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 1.3684638542166747,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              92.19161043551023,
+              25.239399072364275
+            ],
+            [
+              92.19761043551023,
+              25.239399072364275
+            ],
+            [
+              92.19761043551023,
+              25.245399072364275
+            ],
+            [
+              92.19161043551023,
+              25.245399072364275
+            ],
+            [
+              92.19161043551023,
+              25.239399072364275
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S043",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 0.9124056196546442,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.29478945765736,
+              25.721735438540662
+            ],
+            [
+              91.30078945765736,
+              25.721735438540662
+            ],
+            [
+              91.30078945765736,
+              25.727735438540662
+            ],
+            [
+              91.29478945765736,
+              25.727735438540662
+            ],
+            [
+              91.29478945765736,
+              25.721735438540662
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S044",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 0.9124056196546442,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              92.50794999950351,
+              25.482944184424053
+            ],
+            [
+              92.51394999950351,
+              25.482944184424053
+            ],
+            [
+              92.51394999950351,
+              25.488944184424053
+            ],
+            [
+              92.50794999950351,
+              25.488944184424053
+            ],
+            [
+              92.50794999950351,
+              25.482944184424053
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S045",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 0.4562317336796926,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              92.67266251390502,
+              25.31705883976677
+            ],
+            [
+              92.67866251390502,
+              25.31705883976677
+            ],
+            [
+              92.67866251390502,
+              25.32305883976677
+            ],
+            [
+              92.67266251390502,
+              25.32305883976677
+            ],
+            [
+              92.67266251390502,
+              25.31705883976677
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S046",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 7.722406541440192,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              90.27697922815811,
+              25.79597840955804
+            ],
+            [
+              90.28297922815811,
+              25.79597840955804
+            ],
+            [
+              90.28297922815811,
+              25.80197840955804
+            ],
+            [
+              90.27697922815811,
+              25.80197840955804
+            ],
+            [
+              90.27697922815811,
+              25.79597840955804
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S047",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 6.03885622520081,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              89.96719750713163,
+              25.65532360862027
+            ],
+            [
+              89.97319750713163,
+              25.65532360862027
+            ],
+            [
+              89.97319750713163,
+              25.661323608620272
+            ],
+            [
+              89.96719750713163,
+              25.661323608620272
+            ],
+            [
+              89.96719750713163,
+              25.65532360862027
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S048",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 3.3642897967477032,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              89.88220769182729,
+              25.426107788386766
+            ],
+            [
+              89.88820769182729,
+              25.426107788386766
+            ],
+            [
+              89.88820769182729,
+              25.432107788386766
+            ],
+            [
+              89.88220769182729,
+              25.432107788386766
+            ],
+            [
+              89.88220769182729,
+              25.426107788386766
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S049",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 3.3642897967477032,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.65107040802326,
+              25.839681460895058
+            ],
+            [
+              91.65707040802326,
+              25.839681460895058
+            ],
+            [
+              91.65707040802326,
+              25.845681460895058
+            ],
+            [
+              91.65107040802326,
+              25.845681460895058
+            ],
+            [
+              91.65107040802326,
+              25.839681460895058
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S050",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 1.4424570861239596,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.65258252330754,
+              25.914144627505276
+            ],
+            [
+              91.65858252330754,
+              25.914144627505276
+            ],
+            [
+              91.65858252330754,
+              25.920144627505277
+            ],
+            [
+              91.65258252330754,
+              25.920144627505277
+            ],
+            [
+              91.65258252330754,
+              25.914144627505276
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S051",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 0.4562317336796926,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.91852722913005,
+              25.273699204302932
+            ],
+            [
+              91.92452722913005,
+              25.273699204302932
+            ],
+            [
+              91.92452722913005,
+              25.279699204302933
+            ],
+            [
+              91.91852722913005,
+              25.279699204302933
+            ],
+            [
+              91.91852722913005,
+              25.273699204302932
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S052",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 2.1631145687628943,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.15470773820562,
+              25.43928780037022
+            ],
+            [
+              91.16070773820562,
+              25.43928780037022
+            ],
+            [
+              91.16070773820562,
+              25.44528780037022
+            ],
+            [
+              91.15470773820562,
+              25.44528780037022
+            ],
+            [
+              91.15470773820562,
+              25.43928780037022
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S053",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 0.3226079618399632,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.72670102261226,
+              25.901513925592
+            ],
+            [
+              91.73270102261226,
+              25.901513925592
+            ],
+            [
+              91.73270102261226,
+              25.907513925592
+            ],
+            [
+              91.72670102261226,
+              25.907513925592
+            ],
+            [
+              91.72670102261226,
+              25.901513925592
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S054",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 1.4424570861239596,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              92.12190398469345,
+              25.957671061272432
+            ],
+            [
+              92.12790398469345,
+              25.957671061272432
+            ],
+            [
+              92.12790398469345,
+              25.963671061272432
+            ],
+            [
+              92.12190398469345,
+              25.963671061272432
+            ],
+            [
+              92.12190398469345,
+              25.957671061272432
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S055",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 1.6126308885769527,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.64622921095291,
+              25.299018281363985
+            ],
+            [
+              91.65222921095291,
+              25.299018281363985
+            ],
+            [
+              91.65222921095291,
+              25.305018281363985
+            ],
+            [
+              91.64622921095291,
+              25.305018281363985
+            ],
+            [
+              91.64622921095291,
+              25.299018281363985
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S056",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 0.967742076511046,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              92.35185348925933,
+              25.155705122742177
+            ],
+            [
+              92.35785348925933,
+              25.155705122742177
+            ],
+            [
+              92.35785348925933,
+              25.161705122742177
+            ],
+            [
+              92.35185348925933,
+              25.161705122742177
+            ],
+            [
+              92.35185348925933,
+              25.155705122742177
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S057",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 0.9124056196546442,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              90.29202472648981,
+              25.926670541076973
+            ],
+            [
+              90.29802472648981,
+              25.926670541076973
+            ],
+            [
+              90.29802472648981,
+              25.932670541076973
+            ],
+            [
+              90.29202472648981,
+              25.932670541076973
+            ],
+            [
+              90.29202472648981,
+              25.926670541076973
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S058",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 0.9124056196546442,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              90.41629272013354,
+              25.353471223791548
+            ],
+            [
+              90.42229272013354,
+              25.353471223791548
+            ],
+            [
+              90.42229272013354,
+              25.359471223791548
+            ],
+            [
+              90.41629272013354,
+              25.359471223791548
+            ],
+            [
+              90.41629272013354,
+              25.353471223791548
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S059",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 0.0,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.19600022574822,
+              25.712568937611845
+            ],
+            [
+              91.20200022574822,
+              25.712568937611845
+            ],
+            [
+              91.20200022574822,
+              25.718568937611845
+            ],
+            [
+              91.19600022574822,
+              25.718568937611845
+            ],
+            [
+              91.19600022574822,
+              25.712568937611845
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "S060",
+        "usable_area_m2": 36000,
+        "has_road_access": true,
+        "in_flood_zone": false,
+        "in_hazard_zone": false,
+        "slope_deg": 0.72134284201982,
+        "source_status": "prototype_derived",
+        "source_note": "Demo candidate polygon derived from model village point; replace with real site/land data."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              90.13452515032145,
+              25.728248201989324
+            ],
+            [
+              90.14052515032145,
+              25.728248201989324
+            ],
+            [
+              90.14052515032145,
+              25.734248201989324
+            ],
+            [
+              90.13452515032145,
+              25.734248201989324
+            ],
+            [
+              90.13452515032145,
+              25.728248201989324
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

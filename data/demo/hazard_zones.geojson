@@ -1,0 +1,48 @@
+{
+  "type": "FeatureCollection",
+  "name": "demo_hazard_zones",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "disclaimer": "DEMO/SYNTHETIC DATA \u2014 NOT VALIDATED FOR OPERATIONAL EVACUATION.",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "zone_id": "HAZ_01",
+        "name": "Demo landslide hazard polygon",
+        "data_quality": "synthetic_demo"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.175,
+              25.567
+            ],
+            [
+              91.235,
+              25.567
+            ],
+            [
+              91.235,
+              25.603
+            ],
+            [
+              91.175,
+              25.603
+            ],
+            [
+              91.175,
+              25.567
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

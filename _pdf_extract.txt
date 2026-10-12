@@ -1,0 +1,1715 @@
+
+
+======== C:\Users\acer\Desktop\Problem_Solution.pdf ========
+--- page 1 ---
+Executive Summary
+The GeoSentinel project proposes an AI-driven landslide early warning and safe-relocation system for
+India’s North Eastern Region (NER). By integrating real-time environmental sensing, satellite imagery, and
+historical data, the system will predict high-risk zones and issue alerts to authorities and communities.
+Crucially, it extends beyond warning to facilitate safe relocation from vulnerable areas (the “wow” factor of
+combining SIH26001 and SIH26191). 
+We envision a staged development path: 
+Prototype (Internal Hackathon): Rapid proof-of-concept with core ML model and simple GIS
+dashboard. 
+Pilot MVP: A functional regional system with real data ingestion (rainfall, soil moisture, DEM, etc.),
+field reporting app, and localized alerts. 
+Production: Scalable cloud deployment covering multiple districts, robust APIs, offline mode, and
+integration with government workflows (e.g. IMD alerts). 
+Key deliverables include risk heatmaps, a predictive analytics engine, and mobile/web apps for field data
+and alerts. We will use official datasets (IMD, ISRO/NRSC, NASA) and open sources (WorldPop, OSM), and
+technologies like Python, PostGIS, and Kubernetes. An AI model (e.g. XGBoost) will fuse features like recent
+rainfall, soil moisture, slope, and landcover to produce probabilistic risk scores. Explainability (SHAP values)
+will highlight drivers of risk. 
+A demo plan covers historical back-testing (e.g. Kedarnath 2013), simulated sensor feeds, and field-test
+scenarios. We recommend three pilot districts (Meghalaya’s West Khasi Hills, Assam’s Dima Hasao,
+Nagaland’s Mon) based on high landslide incidence and data availability. A detailed timeline (Gantt chart)
+and team plan support internal selection. 
+This comprehensive report includes data sources, architecture diagrams, ML design, UI concepts, timelines,
+and a submission checklist, with citations to authoritative sources. We aim to improve disaster
+preparedness, reduce casualties, and enhance climate resilience in NER.
+Stage 1: Internal Prototype (Hackathon)
+Objectives
+Proof-of-Concept Risk Model: Build a basic ML model (e.g. classification/regression) to flag
+landslide risk using limited data (rainfall, DEM, vegetation). 
+Quick GIS Dashboard: Display a map with sample risk heatmap for a target area and highlight high-
+risk roads/villages. 
+Basic Reporting App: A simple mobile interface to geo-tag photo reports of slope cracks or
+blockages. 
+• 
+• 
+• 
+• 
+• 
+• 
+1--- page 2 ---
+Alert Logic: Show example alerts (SMS/notification) based on model output (e.g. “High landslide risk
+on Hwy X”). 
+Goal: Demonstrate feasibility and a working prototype. As SIH guidelines emphasize, the internal round
+requires a working prototype (not just plans)【3†L33-L39】. 
+Deliverables
+A trained ML model (e.g. XGBoost) using sample data, with performance metrics (accuracy, AUC,
+etc.). 
+Interactive web page with embedded map (e.g. Leaflet) showing risk overlay (see Fig. 1). 
+Mobile/web UI mockup allowing input of incident reports. 
+Demo script illustrating a landslide scenario (e.g. heavy rain → alert). 
+Scope & Limits
+Geography: One district or small area in NER (to limit data needs). For example, West Khasi Hills
+(Meghalaya) or similar . 
+Data: Use publicly available minimal datasets (e.g. one month of rainfall, SRTM DEM). Historical
+landslide inventory may be limited. 
+Features: Focus on a few key factors (rainfall intensity, slope) rather than full suite. 
+Performance: Prototype need not be highly accurate; emphasis on working end-to-end pipeline. 
+Risks: Lack of data or time, mitigated by synthetic data or open global datasets (e.g. NASA’s global
+landslide susceptibility map as proxy【69†L364-L372】). 
+Team Roles
+ML Engineer (1): Develop data pipeline, train/test models. 
+GIS Analyst (1): Prepare spatial layers (DEM, landcover , roads) and integrate map. 
+Full-Stack Developer (1): Build simple web backend (e.g. Flask) and frontend dashboard. 
+UX/Field Expert (1): Design the photo-reporting app UI (even if static prototype) and plan alert
+delivery. 
+(Total ~4 people, working ~2–4 weeks equivalent; ~40 person-days)
+Milestones (tentative)
+Data Ingestion & Cleaning (5 PD): Fetch sample rainfall grids, DEM, vegetation index; preprocess. 
+Feature Engineering (5 PD): Compute slope from DEM, recent rain totals, forest cover indicator . 
+Model Training (8 PD): Train baseline classifier/regressor; evaluate on held-out points (if any
+historical events). 
+Map Integration (5 PD): Overlay risk scores on a web map (Folium/Leaflet). 
+App Prototype (5 PD): Static mobile form to submit geo-tagged reports (no backend needed). 
+Alert Demo (2 PD): Script SMS/print outputs when risk passes threshold. 
+Prep Demo Slides (3 PD): Explain logic and show prototype.
+Total: ≈30–40 person-days. 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+2--- page 3 ---
+Risks & Mitigations
+Data Gaps: Limited local data. Mitigate: Use global proxies (e.g. NASA GPM rain data【43†L100-
+L107】, SRTM DEM【35†L1128-L1136】) or focus on synthetic scenario. 
+Model Inaccuracy: Early model may have high error . Mitigate: Emphasize relative risk and allow
+tweaking threshold in demo. 
+Integration Issues: Time constraint may hinder full integration. Mitigate: Build components
+modularly, prioritize core flow.
+Acceptance Criteria
+A running prototype (not slides) that the team can demonstrate end-to-end (data → prediction →
+map/alert). SIH guidance stresses “working prototype” and clear team roles【3†L33-L39】. 
+Key functionalities: Risk heatmap generation; at least one alert triggered (via console/SMS). 
+A user walkthrough showing how field reports feed into the system (simulated). 
+Clear explanation of next steps (i.e. pilot plan) in slides.
+Stage 2: Pilot MVP (Regional Roll-out)
+Objectives
+Scale Regionally: Extend beyond one district to multiple districts in NER. Integrate data pipelines for
+near-real-time updates. 
+Enhanced Data: Incorporate additional inputs: real-time IMD rain API【28†L37-L42】, soil moisture
+sensors or model, landcover from satellites. 
+Functional Mobile App: Full-stack app allowing field officials/citizens to report incidents (photos/
+videos), store data offline, sync when online. 
+Bilingual Alerts: Implement notifications in local languages (e.g. Khasi, Assamese) via SMS and app. 
+Basic Relocation Planning: Identify nearest shelters or safe zones given population and terrain, to
+prepare for potential evacuation. 
+Deliverables
+Integrated Pipeline: Automated ingestion of IMD rainfall forecasts, satellite soil moisture (e.g.
+SMAP), and sensor feeds (if installed). 
+AI/ML Engine: Revised model with more features (7-day rain sum, antecedent moisture, NDVI). 
+GIS Dashboard: Expanded to show vulnerability layers (roads/infrastructure), plus live weather
+overlay. 
+Mobile/Web App: Working field-report app (Android/iOS), offline-capable (sync when connectivity
+returns). 
+Early Warning System: Automated alerts (SMS, app push) when ML model crosses thresholds. 
+Relocation Module: Dashboard view highlighting safe locations (shelters/schools) and evacuation
+routes.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+3--- page 4 ---
+Scope & Limits
+Geography: Pilot in 2–3 contiguous districts (e.g. West Khasi+East Khasi in Meghalaya, or Dima
+Hasao+Karbi Anglong in Assam). 
+Data: Use official sources: IMD APIs【28†L37-L42】, ISRO landslide inventory for region, SRTM DEM
+【35†L1128-L1136】, landcover (ESA WorldCover 10m【27†L30-L33】), WorldPop 100m population
+【40†L15-L23】. 
+Team: Larger team (e.g. 6–8 members) with defined roles (ML, GIS, mobile dev, backend, domain
+expert, PM). 
+Limits: No custom sensor network deployment (may use publicly available proxied soil moisture).
+Evacuation planning is advisory, not command-and-control. 
+Milestones & Effort
+Data Assembly (20 PD): Set up ETL for rainfall (IMD API), soil moisture (ESA CCI or NASA SMAP),
+monthly landcover updates. 
+Model Improvement (30 PD): Retrain with more features and more data (e.g. 5 years historical).
+Calibrate thresholds using past events (e.g. Kedarnath, 2013【69†L379-L387】). 
+App Development (25 PD): Build cross-platform app (Flutter/React Native) for field reporting, photo
+upload, offline storage (CouchDB/PouchDB). 
+Backend APIs (20 PD): Develop REST services (Node.js/Django) for data ingestion (e.g. from sensors/
+apps), model inference, and push notifications. 
+Dashboard Enhancements (15 PD): Add roads, villages, shelters from OSM/Government, overlays
+(soil moisture, precipitation), language support. 
+Localization (10 PD): Implement multilingual interface, multilingual SMS gateway integration. 
+Testing & Refinement (15 PD): Pilot with select users, refine alert thresholds, address false
+positives. 
+Total: ≈135–150 person-days.
+Risks & Mitigations
+Connectivity/Offline: NER has remote areas with spotty network. Mitigate: Offline-first app design
+with later sync; SMS as backup (needed per [1]). 
+Data Latency: Delays in IMD feed or sat imagery. Mitigate: Use short-term forecasts or ground
+gauges where possible; design model to handle data gaps. 
+User Adoption: Resistance or misuse by communities. Mitigate: Engage local officials and NGOs
+early; allow citizen reporting to build trust. 
+Resource Constraints: Scaling GIS data may be heavy. Mitigate: Use cloud geoservices (e.g. AWS
+Lambda for processing) and tile caching. 
+Acceptance Criteria
+Automated pipeline updating every ~3–6 hours with new data. 
+App successfully records geo-tagged reports and syncs to server . 
+Alerts have been tested in situ (e.g. triggered on a held-out “event” from history). 
+Dashboard shows up-to-date risk map with overlayed weather and population layers. 
+Pilot user feedback indicates usability (e.g. disaster officials agree it aids planning). 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+4--- page 5 ---
+Stage 3: Production System
+Objectives
+Full Coverage: Extend system across NER states and scale to national-level infrastructure as needed.
+Robust Backend: Containerized microservices (Docker/Kubernetes) with auto-scaling (AWS/GCP). 
+Advanced Analytics: Integrate more ML/DL models (e.g. LSTM for time-series rainfall, deep
+networks for image-based detection of cracks). 
+Interoperability: Connect with national platforms (NDMA, IMD dashboards) via APIs. 
+Emergency Operations Center (EOC) Mode: Real-time dashboards for district admins to dispatch
+responders, plus push alerts to public via multi-channel (SMS, radio, local loudspeakers). 
+Relocation Execution: Integrate carrying-capacity model (SIH26191) to plan evacuation bus
+allocation, shelter assignments, and safe-route guidance. 
+Deliverables
+Scalable Cloud Deployment: Kubernetes cluster , managed DB (PostGIS/RDS), continuous
+integration. 
+Refined Predictive Engine: Ensemble of models (e.g. XGBoost + RandomForest + CNN on satellite
+images) with performance evaluation. 
+Full-featured Apps: Field apps with user accounts and richer UI (offline maps, manuals), public app
+for alerts. 
+Govt Integration: APIs feeding into District Warning Centers; dashboards with role-based access
+(NDMA, SDRF, local). 
+Evacuation Planner: Module that ranks villages by risk and suggests relocation capacity (integration
+of population data【40†L15-L23】, terrain). 
+Comprehensive Testing: Stress tests, security audits, disaster drills with emergency services. 
+Scope & Limits
+Region: All of NER (and potentially replicate in other hilly regions). 
+Data: Full historical archives (NRSC landslide atlas【30†L8-L16】 of 80k events), continuous satellite
+feeds, dense station networks. 
+Team: Full project team (~10–12) including DevOps, data scientists, GIS specialists, and liaisons with
+government bodies. 
+Limitations: While real-time hazard monitoring is robust, no guarantee of preventing all disasters. It
+augments, not replaces, engineering solutions (e.g. slope stabilization). 
+Milestones & Effort
+Enterprise Architecture (50 PD): Design high-availability system; set up cloud infra (compute, data
+lakes, GIS server). 
+Model Ensemble & Tuning (40 PD): Train advanced models, tune via cross-validation on long
+historical records. Incorporate explainability (SHAP) for transparency. 
+API & Integration (30 PD): Secure APIs for two-way data exchange (weather forecasts, landslide
+reports); integration with IMD feeds and National Open Data initiatives. 
+User Interfaces (40 PD): Polish apps/UI, conduct user training manuals in local languages. 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+5--- page 6 ---
+DevOps & QA (30 PD): CI/CD pipelines, automated tests, load testing; implement offline-sync
+mirroring. 
+Government Drills (20 PD): Work with disaster agencies for drills; refine SOPs for alert
+dissemination and evacuation based on system outputs. 
+Total: ≈210–230 person-days.
+Risks & Mitigations
+Scaling Issues: Handling big data and many users. Mitigate: Use serverless (Lambda) for bursty
+tasks; CDN for static map tiles. 
+False Alarms: Over-warnings could lead to complacency. Mitigate: Calibrate alerts to balance false
+positives/negatives; use multi-tier warnings (e.g. Watch/Warning). 
+Privacy & Data Sensitivity: Citizen data (e.g. location reports) must be secured. Mitigate: Follow IT
+Act compliance, encrypt data, anonymize where possible. 
+Maintenance: System upkeep after launch. Mitigate: Train local IT staff; document code; use
+managed services for easier support.
+Acceptance Criteria
+Reliability: 24×7 operation with automated failover; <99.9% uptime during monsoon season. 
+Performance: System handles daily forecasts and sensor feeds with <1-hour latency; apps sync
+updates within minutes of connectivity. 
+Accuracy: Empirically validated model (e.g. AUC > 0.8 on test set, sufficient recall on historical
+events). 
+Usability: Local officials and community users can operate apps and dashboards with minimal
+training (assessed via user feedback). 
+Impact: Demonstrated reduction in response time or better evacuation outcomes in drills
+(compared to pre-system baseline). 
+Data Sources and Licenses
+We will use authoritative and open datasets for NER:
+Rainfall (Gridded): IMD’s high-resolution daily gridded rainfall (0.25°) covering 1901–present
+(NetCDF) from IMD/Pune. Also NASA GPM-IMERG (0.1° half-hourly)【43†L100-L107】, and CHIRPS
+satellite rainfall (0.05° daily)【16†L206-L215】. Formats: NetCDF/GeoTIFF; License: Open (IMD via
+consent, NASA open data). 
+Soil Moisture: NASA SMAP L3 surface soil moisture (9 km); ESA CCI soil moisture (0.25° daily); and a
+new high-res root-zone soil moisture dataset for India (0.05° daily, 1981–2024, via Zenodo)
+【18†L394-L402】. Formats: NetCDF, GeoTIFF; License: CC-BY. 
+Terrain (DEM): SRTM (30m) global DEM【35†L1128-L1136】, and ASTER GDEM (30m). For finer local
+detail, Bhuvan’s Cartosat DEM (30m). Formats: GeoTIFF; License: Public domain (NASA/USGS for
+SRTM). 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+6--- page 7 ---
+Landcover: ESA WorldCover (2020–21 global land cover at 10m)【27†L30-L33】; MODIS MCD12Q1
+(500m yearly land cover); ISRO Bhuvan Land Use/Land Cover (50K scale). Formats: GeoTIFF/ESRI
+Shapefile; License: CC-BY or free for research. 
+Historical Landslides: ISRO/NRSC Landslide Atlas of India (1998–2022, ~80k landslides in Himalaya/
+Ghats)【30†L8-L16】; NASA Global Landslide Catalog (rainfall-triggered, 2007–present)【35†L996-
+L1004】; scientific case data (e.g. Dima Hasao 2022 case study【73†L59-L62】). Formats: CSV/
+GeoJSON/Shapefile; License: Open (CC-BY). 
+Population & Villages: WorldPop India (population count at 100m)【40†L15-L23】; Census 2011
+village boundaries and population (govt data, shapefiles/PDFs); Facebook HRSL (30m, research
+license). Formats: GeoTIFF/Shapefile; License: CC-BY 4.0 (WorldPop). 
+Roads & Infrastructure: OpenStreetMap (OSM) data for roads, trails, and critical facilities (GPL/
+ODbL); Government road shapefiles if available (e.g. NHAI highways). Formats: OSM XML, Shapefile; 
+License: ODbL. 
+Shelters/Evacuation Sites: Local government sources (if any); else derive from OSM
+(amenity=shelter , school). License: OSM ODbL. 
+Weather Forecast APIs: IMD public APIs (city/subdivision rainfall, warnings)【28†L37-L42】; NOAA/
+NWS APIs (global weather) as fallback; OpenWeatherMap (commercial). Formats: JSON; License: Free
+for limited use (IMD requires registration). 
+Table: Key Datasets
+Category Example Dataset & Source Format &
+Coverage
+Spatial/Temporal
+Resolution License
+Rainfall IMD Daily Gridded (Pune)
+【43†L100-L107】
+NetCDF
+(135×129
+grid)
+0.25° (~25km),
+daily (1901–2024)
+Government
+open
+NASA GPM-IMERG
+【43†L100-L107】 HDF/GeoTIFF
+0.1° (~10km),
+30min (2014–
+present)
+Open
+CHIRPS (UCSB)【16†L206-
+L215】
+GeoTIFF/
+NetCDF
+0.05°, daily
+(1981–present) CC-BY
+Soil
+Moisture NASA SMAP L3 HDF5/
+GeoTIFF
+9km, ~3-day
+revisit CC-BY
+ESA CCI Soil Moisture NetCDF 0.25°, daily
+(1978–2021) CC-BY
+India RZSM (Zenodo)
+【18†L394-L402】 NetCDF/Text 0.05°, daily
+(1981–2024) CC-BY
+DEM/
+Terrain
+SRTM (USGS/NASA)
+【35†L1128-L1136】 GeoTIFF 30m (~1″), global Public domain
+ASTER GDEM (NASA/METI) GeoTIFF 30m CC-BY
+• 
+• 
+• 
+• 
+• 
+• 
+7--- page 8 ---
+Category Example Dataset & Source Format &
+Coverage
+Spatial/Temporal
+Resolution License
+Cartosat DEM (Bhuvan) GeoTIFF 30m Govt
+(restrictive)
+Landcover ESA WorldCover 10m
+【27†L30-L33】 GeoTIFF 10m (2020) CC-BY
+MODIS MCD12Q1 (NASA) HDF 500m, yearly Open
+Bhuvan LULC (NRSC) Shapefile 50K maps Free (govt)
+Landslides ISRO Landslide Atlas【30†L8-
+L16】 Shapefile ~80k points
+(1998–2022) Govt open
+NASA GLC【35†L996-L1004】 CSV/GeoJSON Global (2007–
+present) CC-BY
+Research case studies (e.g.
+Dima Hasao 2022【73†L59-
+L62】)
+– – –
+Population WorldPop India【40†L15-
+L23】 GeoTIFF 100m (2020) CC-BY 4.0
+Census 2011 (govt) Tabular/Geo Village-level Public domain
+Roads/
+Shelters OpenStreetMap (OSM) Shapefile/
+OSM XML Vector , global ODbL
+Govt disaster/shelter list Tabular – Govt open if
+published
+Weather
+APIs
+IMD Rain/Warn APIs
+【28†L37-L42】 JSON REST Daily forecasts &
+warnings
+Free
+(registration)
+(All sources are from official/government or research portals; licensing allows reuse in public-sector projects.)
+Technology Stack & Architecture
+The system will evolve over stages, but core technologies include:
+Programming & Frameworks: Python (data processing, ML with scikit-learn/XGBoost/TensorFlow),
+R (if needed), Node.js or Django/Flask for backend APIs, React or Vue for frontend, React Native/
+Flutter for mobile app. 
+Data & DB: PostgreSQL with PostGIS extension for spatial data; time-series DB (InfluxDB) for sensor
+logs; object storage (AWS S3 or GCP Buckets) for large raster (DEM, imagery). 
+• 
+• 
+8--- page 9 ---
+Cloud Infrastructure: Initially local development; pilot on AWS/GCP VMs; production on Kubernetes
+(EKS/GKE) with auto-scaling. Serverless (AWS Lambda) for on-demand processing (e.g. ingest API,
+SMS gateway). 
+GIS/Mapping: GeoPandas, GDAL for preprocessing; Leaflet or Mapbox GL JS for web GIS; QGIS for
+offline analysis; Google Earth Engine for bulky satellite data access (rainfall, NDVI). 
+Machine Learning: Python ML libraries (scikit-learn, XGBoost, LightGBM), possibly TensorFlow/Keras
+for deep learning (CNN on satellite images). SHAP for explainability. Geospatial ML libraries (e.g.
+PySAL) if needed. 
+Mobile/Offline: App with local storage (SQLite or PouchDB) to cache data and reports; sync logic to
+handle intermittent connectivity. Use of SMS gateway APIs (Twilio/MSG91) for broadcast alerts. 
+APIs & Integration: IMD open-weather APIs【28†L37-L42】 for forecasts; NASA/Google APIs for
+global datasets (GPM); Government open data portals. RESTful JSON APIs for all internal data flows. 
+DevOps: GitHub/GitLab CI-CD, Docker for containerization, Prometheus+Grafana for monitoring, ELK
+stack for logs (optional). Use VPN or secure channels for sensitive data. 
+Architecture Diagram (Example)
+flowchart LR
+  subgraph DataSources
+    A[IMD Rainfall/API] 
+    B[Satellite (GPM, SMAP, Landsat)] 
+    C[Sensors (SoilMoisture etc)] 
+    D[Historical Landslide DB]
+    E[Population/Census, OSM]
+  end
+  subgraph CloudPipeline
+    A -->|ingest| F[Data Lake (S3/Cloud DB)]
+    B -->|ingest| F
+    C -->|ingest| F
+    D -->|ingest| F
+    E -->|ingest| F
+    F --> G[Feature Store (PostGIS)]
+    G --> H[ML Model Server]
+    H --> I[Prediction DB]
+    G --> J[GIS Server (Tile Service)]
+  end
+  subgraph Services
+    I -->|risk data| K[Web Dashboard]
+    I -->|risk data| L[Mobile App]
+    E -->|base maps| K
+    J -->|map tiles| K
+    K -->|alerts (SMS/App)| M[Notification Service]
+    L -->|report uploads| H
+  end
+  classDef source fill:#f9f,stroke:#333,stroke-width:1px
+  class DataSources source
+• 
+• 
+• 
+• 
+• 
+• 
+9--- page 10 ---
+Fig. 3. Simplified system architecture and data flow: environmental data (rainfall, soil, satellite) and historical
+records are ingested into cloud storage, processed into features, fed into an ML model, then stored in a
+Prediction DB. A GIS server provides map tiles. Web/mobile frontends consume risk data and serve alerts
+back to users. Data sources and outputs are linked by arrows as shown. 
+Sample UI Wireframes
+GIS Dashboard: Web map with layers for Risk Heatmap, roads, villages, weather radar , and icons
+for recent field reports. Panels on the side show Risk Severity legend, Weather Forecast, and 
+Notification Center. Users (e.g. DM officials) can click on hotspots to view details (soil moisture, rain in
+last 24h, historical landslides). 
+Mobile App (Field Reporter): Screen to Capture Photo/Video of cracks or blockages, auto-add geotag
+and timestamp, form to select incident type (e.g. “Crack”, “Blockage”, “Damage”). An Alerts screen lists
+received warnings (color-coded by severity). Offline mode caches reports until connectivity returns. 
+Public Alert Interface: SMS/text and app notifications in local language (e.g. “অতি বৃষ্টি: হুঁশিয়াৰী!” in
+Assamese) with advice (“Move to higher ground immediately”). Emergency numbers and shelter info
+appended. 
+Safe Relocation Planner: A map interface highlighting Safe Zones (schools, community centers) and
+recommended Evacuation Routes. Once a landslide-prone village is marked at high-risk, the tool
+suggests the nearest shelters and available transport capacity (drawing on population data【40†L15-
+L23】 and temporary camp sites). 
+(These wireframes would be sketched with typical UI elements; they are described here textually. No copyrighted
+images used.)
+ML Modeling Details
+Feature Table (Example)
+Feature Data Source Type Notes / Units
+7-day Rainfall IMD/GPM (API) Numeric Accumulated rain (mm)
+Soil Moisture NASA SMAP / FAO
+SoilGrids Numeric % volumetric (root-zone if available)
+Terrain Slope DEM (SRTM) Numeric Degrees or % gradient
+Landcover Class WorldCover (ESA) Categorical 10 classes (forest, crop, urban…)
+NDVI/
+Vegetation Sentinel-2/MODIS Numeric Normalized Difference Vegetation
+Index
+Road Density OSM Road Network Numeric km of road per km² in area
+Distance to
+Fault USGS/Geological faults Numeric km to nearest known fault line
+• 
+• 
+• 
+• 
+10--- page 11 ---
+These features (and others, e.g. geology, LULC, historical trigger factors) feed into the predictive model. For
+each grid cell or location, we compile a feature vector .
+Model Choice & Training
+We will build a supervised model to predict landslide risk score (continuous) or binary landslide/no-landslide
+for upcoming period. Likely candidates include Gradient Boosting (XGBoost/LightGBM) and Random
+Forests, which handle heterogeneous features and provide feature importance. We will also explore deep
+learning (e.g. CNNs on satellite images) if warranted. Hyperparameters (learning rate, depth, etc.) will be
+tuned via cross-validation; a baseline might be XGBoost with 100 trees, max depth 6. 
+For regression, we may predict slide probability or expected volume; for classification, we output risk
+categories. Baseline metrics to track: ROC-AUC, Precision/Recall, F1-score, and calibration (to avoid
+overconfidence). If data imbalance exists (few landslides vs many non-events), we’ll use sampling or class
+weighting. 
+Evaluation Metrics
+Accuracy / AUC: Overall detection accuracy and AUC (receiver operating characteristic) for true/false
+positives. 
+Recall at fixed FP rate: e.g. recall of actual landslides at 10% false-alarm rate. 
+Precision/False Alarms: Low false-positive rate is crucial to avoid warning fatigue. 
+Lead Time: How many hours before event is a warning triggered (on historical cases). 
+Confusion Matrix: On held-out events, to quantify missed incidents vs false alerts. 
+Explainability (SHAP)
+We will compute SHAP (SHapley Additive exPlanations) values to interpret model outputs. SHAP can show,
+e.g., that “high 7-day rainfall and steep slope” contributed strongly to a high-risk score at a location. This
+transparency helps officials trust the model. We will analyze SHAP importance across the region to ensure
+the model aligns with domain knowledge (e.g. heavy rainfall should increase risk) and to detect any biases.
+Demonstration Plan
+To validate and showcase GeoSentinel, we will:
+Historical Replay: Re-run the system on past disaster events. For instance, simulate the 2013
+Kedarnath landslide by feeding historical rain data; our model should have flagged that valley (it
+has been identified as very susceptible【69†L364-L372】). We’ll generate an animation or sequence
+showing predicted risk rising days before the event, and map overlays of actual slides for
+comparison. 
+Simulated Sensors: Connect simulated rainfall/soil sensors to the pipeline. For example, feed
+recorded hourly rain from an IMD station into the model in “live” mode to trigger an alert scenario.
+This tests real-time integration. 
+Test Cases: Evaluate edge cases (e.g. high rain in flat area → no false alert, vs moderate rain on
+steep slope → alert). Include unit tests for each module (data ingestion, model inference). 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+11--- page 12 ---
+Field Drill: Organize a live drill with local disaster personnel using the dashboard and apps. For
+example, create a mock scenario (e.g. heavy rain alert in District X) and have teams practice
+evacuation using the system’s recommendations. 
+SIH Presentation Script: We will script a concise pitch for judges: explain risk-focus (not certain
+prediction【1†L112-L119】), highlight “last-mile” innovation (multilingual alerts, offline sync,
+relocation routing), and demonstrate prototype in action. Use storytelling (“If it rains X mm on Y
+day…”) and data points (e.g. “Nagaland’s recent slide had 137mm rain【75†L49-L58】, which our
+system would catch”). Emphasize social impact (faster evacuations, saving lives). 
+Throughout the demo, we will refer to authoritative sources (e.g. NASA’s analysis【69†L364-L372】, IMD
+warnings) to build credibility. The presentation will combine slides with live demo of the web dashboard and
+mobile app to meet SIH judging criteria (show both technical depth and practical usability)【3†L33-L39】
+【1†L112-L119】.
+Candidate Pilot Districts
+We recommend three pilot districts in NER with high landslide risk and available data:
+District (State) Pros Cons Data/Notes
+West Khasi
+Hills,
+Meghalaya
+Mountainous terrain; very high
+landslide hazard (“High” level)
+【52†L38-L41】. Rich rainfall
+(~3000mm/yr), recent slides
+reported. Good road network (East-
+West highway). Local gov’t active in
+disaster prep.
+Rural areas,
+language (Khasi)
+needs support. Some
+cloud cover in rains.
+IMD rain gauges
+present; OSM roads/
+villages mapped; ~20k
+villages (Census 2011).
+Dima Hasao
+(North Cachar
+Hills), Assam
+Very hilly (80% terrain); suffered
+massive flash floods/landslides in
+2022【73†L59-L62】. Multi-lingual
+(Dimasa, Hindi, Assamese).
+Moderate connectivity.
+Sparse population,
+limited weather
+stations. Tribal
+communities
+require outreach.
+NRSC Landslide Atlas
+covers Assam; river/
+gauge data via
+Brahmaputra basin
+studies.
+Mon District,
+Nagaland
+Recent deadly landslide (July 2026)
+with 9 fatalities【75†L49-L58】.
+Steep hills, heavy monsoon rains
+(~137mm in one event). Border
+area (NYK road important). Data
+available via NSDMA.
+Very remote valleys;
+few sensors or roads.
+Electricity/network
+often out.
+IMD issued alerts for
+this event, showing
+linkage with our
+model. OSM roads
+exist for main highway.
+These districts illustrate diverse conditions: Khasi Hills (wettest, high hazard), Dima Hasao (forest-covered
+hills, flash floods), and Mon (remote, extreme rainfall). Each has government data (IMD rain, census, some
+local inventories) and community structures for piloting. They also meet SIH goals by covering at-risk terrain
+and multi-ethnic languages. 
+• 
+• 
+12--- page 13 ---
+(Note: Other NER districts (e.g. East Sikkim, North Cachar , Aizawl) are also landslide-prone, but we focus on
+three for concreteness. All data assumptions will be validated via official sources.)
+Timeline (Gantt Chart)
+The following mermaid Gantt diagram outlines major tasks across the three stages:
+Fig. 4. Project timeline (Gantt chart) illustrating tasks and durations for each stage. Milestones include
+hackathon deliverable (Stage 1), pilot testing (Stage 2), and full launch (Stage 3). 
+Checklist for SIH Internal Round
+For internal selection (36–72 hour hackathon), we must deliver a concise but complete package. Key items:
+[ ] Working Prototype: A demo-ready prototype as outlined in Stage 1 (model + map + app) –
+“something working” is mandatory【3†L33-L39】. 
+[ ] Presentation Slides: 6–10 slides covering problem, solution approach, team, demo results, and
+roadmap (using SIH PPT template if provided). Emphasize innovation (real-time AI, safe relocation
+last-mile). 
+[ ] Demo Script: Written points to guide live demo (e.g. walking through high-risk scenario). Include
+citations of authoritative context (e.g. NASA landslide research【69†L364-L372】) to show research
+depth. 
+[ ] Project Plan Outline: High-level timeline and team roles, as above, to show feasibility. 
+[ ] Source Code/Repo: A shareable code repository or zip of code (even if minimal). 
+[ ] Concept Note Summary: Briefly mention how we combine SIH26001 with SIH26191: after
+predicting risk, we actively plan evacuations (“who to warn, in which language, on what
+channel”【1†L112-L119】). 
+[ ] Innovation Highlight: Stress the “last-mile safe relocation” aspect (e.g. mobile app in local
+language; evacuation route planner). Judges look for going beyond mere warning【1†L112-L119】. 
+[ ] Team Bio: Very short description of team expertise (e.g. “NLP/speech, GIS, web dev, domain
+expert”) showing we can execute. 
+According to SIH internal guidelines【3†L33-L39】, feasibility and readiness are critical. We will ensure our
+submission clearly demonstrates a rapid, tangible solution with planned next steps.
+2026-10-01
+2026-11-01
+2026-12-01
+2027-01-01
+2027-02-01
+2027-03-01
+2027-04-01
+2027-05-01
+2027-06-01
+2027-07-01
+2027-08-01
+2027-09-01
+2027-10-01
+2027-11-01
+2027-12-01
+2028-01-01
+2028-02-01
+Data Collection & Clean
+Baseline Model & Map Demo
+Prototype App/UI
+Internal Hackathon Presentation
+Expanded Data Integration
+ML Model Refinement
+Mobile App Development
+Alert System & Language Support
+Field Testing & Feedback
+Cloud Infra Setup
+Scaled Backend/API Development
+Final Model Ensemble
+UAT & Government Drill
+Launch & Handover
+Stage 1: Prototype
+Stage 2: Pilot MVP
+Stage 3: Production
+GeoSentinel Development Timeline
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+13--- page 14 ---
+References
+India Meteorological Department (IMD) APIs and data【28†L37-L42】 (official rainfall and warnings). 
+Zaidi S. “AI-Based early warning and landslide Risk Monitoring System in NER” (analysis of SIH26001)
+【1†L112-L119】. 
+SIH 2026 Internal Hackathon guidance (team feasibility, prototype)【3†L33-L39】. 
+Singh Chuphal et al., Nature Sci Data (2026): High-res root-zone soil moisture for India【18†L394-
+L402】. 
+WorldCover 10m global landcover (ESA)【27†L30-L33】. 
+ISRO Landslide Atlas of India (1998–2022)【30†L8-L16】. 
+NASA Global Landslide Catalog (GLC) description【35†L996-L1004】. 
+WorldPop population grids (India 2020)【40†L15-L23】. 
+NASA GPM-IMERG precipitation overview【43†L100-L107】. 
+Zheng et al. (2023): CHIRPS precipitation integration with IMD【16†L206-L215】. 
+ThinkHazard report: “West Khasi Hills – Landslide: High hazard”【52†L38-L41】. 
+Singha & Saikia (2025): Case study on Dima Hasao floods/landslides【73†L59-L62】. 
+DownToEarth news (July 2026): Nagaland Mon district landslide【75†L49-L58】. 
+NASA Earth Observatory: Landslide susceptibility mapping, Himalayas (Kedarnath 2013)【69†L364-
+L372】【69†L379-L387】. 
+All sources cited are from official meteorological agencies, space agencies (NASA/ISRO), peer-reviewed studies, or
+recognized research/data portals.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+14
+
+======== C:\Users\acer\Desktop\Landslide_Early_Warning_Relocation_Prototype_Guide.pdf ========
+--- page 1 ---
+Landslide Early Warning & Relocation Intelligence — Prototype Guide
+1
+ Landslide Early Warning &
+ Relocation Intelligence
+ Step-by-Step Prototype Development Guide
+ Core flow: Predict → Warn → Decide → Relocate
+ Practical SIH MVP blueprint for a student team
+--- page 2 ---
+Landslide Early Warning & Relocation Intelligence — Prototype Guide
+2
+1. Prototype Goal
+Build a working demonstration that combines rainfall, terrain, soil and historical landslide information; produces a
+landslide risk score; identifies potentially affected villages; finds safer relocation sites; calculates site capacity; and
+generates a relocation allocation on a map.
+Safety/accuracy boundary: This is a prototype decision-support system. Do not claim that the ML model
+guarantees that a landslide will or will not happen.
+The supplied SIH concept uses the framing Predict → Warn → Decide → Relocate, XGBoost, slope angle, 7-day
+rainfall, elevation, soil type, historical landslide density, a critical threshold above 0.7, GIS suitability analysis,
+top-three sites, carrying capacity and population allocation.
+Keep the first version small: one district, about 10–50 villages, and a handful of candidate sites.
+2. System Architecture
+DATA → DEM + rainfall + soil + landslides + villages + roads/sites
+↓
+PREPROCESSING → clip/reproject + slope + 7-day rainfall + spatial joins
+↓
+ML → XGBoost → risk score 0–1
+↓
+GIS → critical villages → exclude unsafe sites → rank top 3
+↓
+RELOCATION → population → capacity → allocation
+↓
+APP → FastAPI → React + Leaflet
+--- page 3 ---
+Landslide Early Warning & Relocation Intelligence — Prototype Guide
+3
+3. Recommended Tech Stack
+ML: Python, Pandas, NumPy, scikit-learn, XGBoost
+GIS: GeoPandas, Rasterio/GDAL, QGIS
+Backend: FastAPI + Uvicorn
+Frontend: React + Leaflet
+Storage: CSV/GeoJSON first; PostgreSQL/PostGIS later
+Deployment: Docker after the local demo works.
+XGBoost has an official Python package and scikit-learn interface. FastAPI provides an official step-by-step tutorial
+and automatic API documentation; Leaflet provides the interactive mapping API; PostGIS adds spatial storage,
+indexing and geometry operations to PostgreSQL.
+4. Project Folder
+ landslide-intelligence/ ■■■ data/raw/ ■■■ data/processed/ ■■■ data/demo/ ■■■ ml/train.py ■■■
+ml/predict.py ■■■ ml/model/ ■■■ gis/terrain.py ■■■ gis/suitability.py ■■■ backend/main.py ■■■
+backend/schemas.py ■■■ backend/services/ ■■■ frontend/ ■■■ tests/ ■■■ notebooks/ ■■■ requirements.txt
+■■■ README.md
+Initial setup
+ python -m venv .venv # Windows: .venv\Scripts\activate # Linux/macOS: source .venv/bin/activate pip
+install pandas numpy scikit-learn xgboost geopandas rasterio shapely pyproj fastapi uvicorn pydantic
+joblib
+--- page 4 ---
+Landslide Early Warning & Relocation Intelligence — Prototype Guide
+4
+5. Phase 1 — Data Collection
+DEM: use a consistent regional elevation dataset. Copernicus DEM provides global 30 m and 90 m products; 30 m
+is a practical regional prototype choice.
+Rainfall: NASA GPM IMERG provides precipitation estimates and 7-day accumulation products in GIS-friendly
+formats.
+Landslides: use an authoritative inventory for your chosen region. If a suitable Indian inventory is unavailable,
+clearly label any demo/synthetic labels instead of treating another country's inventory as local ground truth.
+Villages/roads: use OpenStreetMap-derived features for the prototype, then verify critical locations before
+presenting them as operational recommendations.
+Minimum tables
+ villages: id, name, geometry, population
+ rainfall: date, location/grid, precipitation_mm
+ terrain: elevation_m, slope_deg
+ soil: soil_code
+ landslides: location, date, source, event label
+ candidate_sites: geometry, usable_area_m2, access and hazard flags
+--- page 5 ---
+Landslide Early Warning & Relocation Intelligence — Prototype Guide
+5
+6. Phase 2 — Geospatial Processing
+Convert raw map layers into one modelling table.
+Step 1 — Clip all layers to the study area.
+Step 2 — Reproject to an appropriate CRS.
+Step 3 — Derive slope from DEM.
+Step 4 — Aggregate rainfall over the previous 7 days.
+Step 5 — Count/normalize historical landslide density using a documented spatial window.
+Step 6 — Spatially join features to villages or grid cells.
+Example modelling table
+ village_id | slope_deg | rainfall_7d_mm | elevation_m | soil_code | history_density | label V001 | 32.4 |
+184.2 | 1450 | 2 | 0.71 | 1 V002 | 14.1 | 92.0 | 900 | 4 | 0.12 | 0
+If you do not have enough reliable labels, make a demo model using clearly labelled synthetic/demo data and state
+that it is not validated for operational use.
+--- page 6 ---
+Landslide Early Warning & Relocation Intelligence — Prototype Guide
+6
+7. Phase 3 — XGBoost Risk Model
+Use the five core features from the SIH concept: slope, 7-day rainfall, elevation, soil type and historical landslide
+density.
+ Features → [slope_deg, rainfall_7d_mm, elevation_m, soil_code, history_density] Target → landslide_event
+(0/1) Model → XGBClassifier Output → risk_score (0–1)
+Training checklist
+ Prevent data leakage: do not use information that became available after the event.
+ Prefer time/geographic splits where possible; random row splits can overstate performance in spatial data.
+ Encode soil categories consistently.
+ Measure precision, recall, F1 and ROC-AUC—not accuracy alone.
+ Inspect performance at the chosen warning threshold.
+ Save the model and preprocessing pipeline together.
+The SIH deck proposes risk > 0.7 as the critical-alert rule. Keep this configurable and treat it as a prototype
+threshold until validated/calibrated.
+--- page 7 ---
+Landslide Early Warning & Relocation Intelligence — Prototype Guide
+7
+8. Phase 4 — GIS Relocation Engine
+After a village becomes critical, the system must answer: where can people go?
+Hard filters
+ Reject sites inside critical landslide/hazard zones.
+ Reject sites inside the chosen flood exclusion layer.
+ Reject sites beyond the chosen slope limit.
+ Reject sites without usable road access.
+ Reject sites with insufficient usable area.
+Suitability score
+ score = 0.30 × safety + 0.25 × road_access + 0.20 × usable_area + 0.15 × distance + 0.10 × infrastructure
+These weights are prototype assumptions, not universal planning standards. Store them in a configuration file so
+they can be changed without rewriting the algorithm.
+Return the top three sites with score, capacity, distance, access and the reason each site passed the filters.
+--- page 8 ---
+Landslide Early Warning & Relocation Intelligence — Prototype Guide
+8
+9. Phase 5 — Population & Capacity
+Identify villages whose risk exceeds the critical threshold, then sum their population.
+Capacity formula
+ capacity_people = floor(usable_area_m2 / area_per_person_m2)
+The supplied concept uses 25 m²/person as a prototype assumption. Keep this value configurable and label it as
+an assumption pending local planning guidance.
+Example
+ Affected population = 1,500 Site A capacity = 800 Site B capacity = 500 Site C capacity = 300 Allocation:
+A → 800 B → 500 C → 200
+A stronger version can add travel time and route safety so people are not assigned through critical hazard areas.
+--- page 9 ---
+Landslide Early Warning & Relocation Intelligence — Prototype Guide
+9
+10. Phase 6 — FastAPI Backend
+Create a small API that connects the frontend to ML/GIS logic.
+ POST /predict-risk → risk scores GET /villages → village data GET /affected-population → critical
+villages + population GET /safe-locations → ranked sites POST /relocation-plan → allocation GET
+/map-geojson → map layers
+Example response
+ { "risk_score": 0.83, "status": "CRITICAL", "affected_population": 3240, "recommended_sites": [
+{"id":"SITE_A","score":0.91,"capacity":800}, {"id":"SITE_B","score":0.84,"capacity":500},
+{"id":"SITE_C","score":0.78,"capacity":300} ] }
+FastAPI's official documentation includes an interactive /docs interface and a testing workflow using
+TestClient/HTTPX and pytest.
+--- page 10 ---
+Landslide Early Warning & Relocation Intelligence — Prototype Guide
+10
+11. Phase 7 — React + Leaflet Dashboard
+ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ ■ LANDSLIDE INTELLIGENCE ■
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ ■ ■ ■ CRITICAL 0.83 ■ ■ MAP ■
+Affected: 3,240 ■ ■ ■ Villages: 5 ■ ■ ■ Critical ■ ■ ■ ■ Medium ■ TOP SAFE SITES ■ ■ ■ Low ■ 1. Site A
+— 91% ■ ■ ■ Relocation ■ 2. Site B — 84% ■ ■ ■ 3. Site C — 78% ■
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ ■ Rainfall: [ 180 mm ] [ RUN PREDICTION
+] ■ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+Map layers: risk zones, villages, population, historical landslides, roads and candidate relocation sites.
+Keep the first UI simple. A reliable map, risk panel and relocation table are more valuable than a complex interface
+with broken connections.
+--- page 11 ---
+Landslide Early Warning & Relocation Intelligence — Prototype Guide
+11
+12. Phase 8 — Live Demo Scenario
+ 1. Select the prepared district.
+ 2. Show the baseline risk map.
+ 3. Increase rainfall with a controlled slider/input.
+ 4. Run the model.
+ 5. Show critical villages appearing.
+ 6. Show affected population.
+ 7. Run relocation planning.
+ 8. Show unsafe candidate sites removed.
+ 9. Show top three sites and their capacity.
+ 10. Show the final allocation on the map.
+Add a rainfall scenario control so judges can see the system react instead of only viewing a static map.
+Offline backup
+Bundle the model, demo CSV/GeoJSON and cached map layers locally. The main demo should not depend on live
+internet access.
+--- page 12 ---
+Landslide Early Warning & Relocation Intelligence — Prototype Guide
+12
+13. Testing Checklist
+ML: model loads; predictions are in range; threshold status is correct; preprocessing matches training.
+GIS: unsafe sites are excluded; distance/area use suitable coordinate systems; GeoJSON renders.
+Relocation: assigned people never exceed capacity; all affected people are assigned or explicitly reported
+unallocated; ranking is deterministic.
+API: one automated test per endpoint; invalid input returns a clear error.
+Demo: complete pipeline runs from one button/scenario without manual database editing.
+--- page 13 ---
+Landslide Early Warning & Relocation Intelligence — Prototype Guide
+13
+14. 15-Day MVP Roadmap
+ Days 1–2 Choose region + repository + first datasets Days 3–4 DEM + slope + rainfall processing Days 5–6
+Modelling table + XGBoost training/evaluation Day 7 Risk map + village layer Day 8 Candidate-site
+filtering + scoring Day 9 Population + capacity + allocation Day 10 FastAPI Days 11–12 React + Leaflet Day
+13 Connect everything Day 14 Testing + offline demo Day 15 UI polish + presentation rehearsal
+If time is short: skip PostGIS, use GeoJSON; use one prepared district; precompute expensive GIS layers; and
+prioritize the complete Predict → Warn → Decide → Relocate flow.
+--- page 14 ---
+Landslide Early Warning & Relocation Intelligence — Prototype Guide
+14
+15. Final Acceptance Test
+ INPUT rainfall + terrain + soil + historical events ↓ RISK 0.83 → CRITICAL ↓ WARN 5 villages / 3,240
+people ↓ DECIDE filter unsafe sites rank safe sites ↓ RELOCATE Site A → 800 Site B → 500 Site C → 200 ↓
+MAP risk + villages + sites + plan
+Credibility rules
+ Show the input features behind at least one prediction.
+ Show evaluation metrics.
+ Explain why a relocation site ranked highly.
+ Clearly label demo/synthetic data.
+ Keep thresholds and weights configurable.
+ Record source/date/version for external datasets.
+ State limitations: sparse labels, rainfall uncertainty, spatial resolution, population freshness and the difference
+between risk modelling and operational warning.
+--- page 15 ---
+Landslide Early Warning & Relocation Intelligence — Prototype Guide
+15
+16. Research Sources
+NASA GPM / IMERG: https://gpm.nasa.gov/data/imerg — precipitation products and documentation.
+Copernicus DEM: https://dataspace.copernicus.eu/explore-data/data-collections/COP-DEM — global DEM
+information.
+USGS Landslide Hazards: https://www.usgs.gov/programs/landslide-hazards/data — landslide inventories and
+hazard tools.
+XGBoost: https://xgboost.readthedocs.io/en/stable/python/ — official Python documentation.
+FastAPI: https://fastapi.tiangolo.com/tutorial/ — official API tutorial.
+Leaflet: https://leafletjs.com/reference — official mapping API.
+PostGIS: https://postgis.net/documentation/manual/ — official spatial database documentation.
+Source boundary
+The project-specific framing and proposed architecture in this guide are based on the supplied SIH deck. External
+dataset and software recommendations were added from official documentation. Items such as suitability weights
+and the 25 m²/person capacity value are presented as prototype assumptions, not universal standards.
+
+
+======== C:\Users\acer\Desktop\GeoSentinel_PRD (1).pdf ========
+--- page 1 ---
+Version 1.0  |  SIH 2026  |  September 2026
+ GeoSentinel
+ AI-Powered Landslide Early Warning &
+ Safe Relocation Intelligence System
+ SIH 2026
+ SIH26001
+ SIH26191
+ NER Focus
+ MVP
+PRODUCT REQUIREMENTS DOCUMENT
+Document Owner
+GeoSentinel Team
+Status
+Draft v1.0
+Hackathon Stage
+Internal Round → Grand Finale
+Target Region
+North Eastern India (NER)
+Core Flow
+Predict → Warn → Decide → Relocate
+ This PRD defines the complete product vision, functional requirements, technical architecture, team
+responsibilities, and success metrics for GeoSentinel — a decision-support system combining real-time ML
+ risk prediction with GIS-driven safe relocation planning for landslide-prone communities in India's North
+ Eastern Region.
+--- page 2 ---
+GeoSentinel
+Product Requirements Document
+Page 2
+CONFIDENTIAL — Internal Use Only
+GeoSentinel  SIH26001 + SIH26191
+1. Executive Summary
+GeoSentinel is an end-to-end, AI-driven disaster management platform that addresses two linked Smart India
+Hackathon problem statements: SIH26001 (early warning for landslide-prone zones in NER) and SIH26191
+(intelligent, capacity-aware relocation planning). By unifying these into a single Predict → Warn → Decide →
+Relocate pipeline, GeoSentinel goes beyond alert generation to actively guide evacuation decisions.
+The system ingests real-time rainfall, satellite-derived terrain and soil moisture data, and historical landslide
+inventories to produce probabilistic village-level risk scores using XGBoost. Scores above a configurable
+threshold (default 0.70) trigger the GIS relocation engine, which filters unsafe candidate sites, ranks the top
+three safe alternatives, calculates population capacity, and allocates affected residents — all visualised on an
+interactive map dashboard in seconds.
+Metric
+Prototype Target
+Production Target
+Model ROC-AUC
+≥ 0.75
+≥ 0.85
+End-to-end latency
+< 30 s
+< 5 s
+Risk threshold
+0.70 (configurable)
+Calibrated per district
+Relocation plan time
+< 10 s
+< 3 s
+Alert delivery
+On-screen
+SMS + App push < 2 min
+Uptime (monsoon)
+Local demo
+99.9 %
+2. Problem Statement
+India's North Eastern Region receives among the highest annual rainfall in the world. The combination of
+steep terrain, clay-heavy soils, deforestation, and intense monsoon events makes NER one of the country's
+most landslide-prone regions. Existing warning systems — where they exist at all — issue generic
+district-level alerts with insufficient lead time and no actionable relocation guidance.
+2.1 Core Pain Points
+ No village-level granularity: Alerts cover entire districts; high-risk villages cannot be distinguished from
+safe ones.
+ Warning without action: Even when alerts are issued, authorities have no systematic tool to decide
+where people should go.
+ Capacity blindness: Relocation sites are chosen ad-hoc, frequently overloaded, or accessible only
+through hazard zones.
+ Language barriers: Alerts in English or Hindi do not reach communities speaking Khasi, Dimasa, or
+Nagamese.
+ Connectivity gaps: Remote valleys lose internet during the most critical storm events, making cloud-only
+systems unreliable.
+--- page 3 ---
+GeoSentinel
+Product Requirements Document
+Page 3
+CONFIDENTIAL — Internal Use Only
+GeoSentinel  SIH26001 + SIH26191
+2.2 Target Geographies
+Initial pilot districts selected for high hazard incidence and data availability:
+District
+State
+Rationale
+West Khasi Hills
+Meghalaya
+Highest hazard rating; ~3,000 mm/yr rainfall; active disaster cell
+Dima Hasao
+Assam
+80% hilly terrain; devastating 2022 flash-flood/slide event
+Mon District
+Nagaland
+Recent July 2026 fatalities; IMD already issuing local alerts
+3. Product Vision & Goals
+ Vision Statement
+To become the authoritative decision-support layer for landslide disaster management in North Eastern India —
+empowering district officials and communities with real-time, explainable risk intelligence and actionable relocation plans
+before the first crack appears.
+3.1 Strategic Goals
+ G1 — Predict: Produce village-level probabilistic landslide risk scores updated with each rainfall cycle.
+ G2 — Warn: Deliver multi-channel, multilingual alerts the moment risk crosses the critical threshold.
+ G3 — Decide: Automatically filter unsafe relocation sites and rank the top three safe alternatives with
+capacity estimates.
+ G4 — Relocate: Allocate affected populations to ranked sites on an interactive map, never exceeding site
+capacity.
+ G5 — Trust: Expose SHAP-based explanations for every prediction so officials understand and trust the
+model.
+ G6 — Resilience: Operate fully offline during network outages by bundling model, GeoJSON, and cached
+tiles locally.
+3.2 Non-Goals (Prototype Scope)
+ Not a real-time sensor network — uses gridded remote-sensing data, not physical IoT devices.
+ Not a command-and-control system — outputs are advisory, not legally binding evacuation orders.
+ Not a structural engineering tool — does not design slope stabilisation or retaining structures.
+ Not validated for operational use — prototype thresholds and weights are assumptions pending
+calibration.
+4. Users & Stakeholders
+4.1 Primary Users
+--- page 4 ---
+GeoSentinel
+Product Requirements Document
+Page 4
+CONFIDENTIAL — Internal Use Only
+GeoSentinel  SIH26001 + SIH26191
+Persona
+Role
+Key Need
+Interface
+District DM Officer
+Decision maker
+Real-time risk map + relocation plan
+Web Dashboard
+Field Inspector
+Ground reporter
+Submit geo-tagged incident reports
+Mobile App
+Village Panchayat
+Community leader
+Understand risk in local language
+SMS / App alert
+SDRF / NDRF
+Responder
+Know which sites are safe + capacity
+Web Dashboard
+Data Scientist
+Model maintainer
+Retrain, evaluate, tune threshold
+Notebooks / API
+--- page 5 ---
+GeoSentinel
+Product Requirements Document
+Page 5
+CONFIDENTIAL — Internal Use Only
+GeoSentinel  SIH26001 + SIH26191
+5. System Architecture
+GeoSentinel follows a layered pipeline architecture. Each layer has a defined input contract and output
+schema, enabling parallel development and independent testing.
+Layer
+Components
+Owner
+Output
+1 — Data Ingestion
+NASA GPM, Copernicus DEM, ISRO
+Atlas, OSM, WorldPop
+Friend (Step 1)
+Raw rasters + CSVs
+2 — Preprocessing
+GeoPandas, Rasterio, QGIS ·
+clip/reproject/slope
+Friend (Step 2)
+modelling_table.csv
+3 — ML Risk Model
+XGBoost + scikit-learn · SHAP
+explainability
+Friend (Step 3)
+risk_score 0–1 per
+village
+4 — GIS Relocation
+GeoPandas · hard filters + suitability
+scoring
+You (Step 4)
+Top-3 sites + capacity
+5 — Capacity Alloc.
+Pure Python · floor(area/25 m²) allocation
+You (Step 5)
+allocation.json
+6 — Backend API
+FastAPI + Uvicorn · 6 endpoints
+You (Step 6)
+JSON REST responses
+7 — Frontend
+React + Leaflet · interactive map
+dashboard
+You (Step 7)
+Browser UI
+Rows highlighted in orange = your responsibility (Steps 4–7).
+5.1 Core Pipeline Flow
+ DATA (DEM + rainfall + soil + landslides + villages + roads)
+   → PREPROCESSING (clip / reproject / slope / 7-day rainfall / spatial join)
+      → XGBoost → risk score 0–1 per village
+         → GIS ENGINE (filter unsafe sites → rank top 3 → capacity)
+            → RELOCATION (allocate population → allocation.json)
+               → FastAPI → React + Leaflet (live map + alert panel)
+5.2 Tech Stack
+Category
+Technology
+Purpose
+ML
+Python · Pandas · NumPy · scikit-learn · XGBoost ·
+SHAP
+Risk model training, inference, explainability
+GIS
+GeoPandas · Rasterio · GDAL · Shapely · QGIS
+Terrain processing, site suitability, spatial
+joins
+Backend
+FastAPI · Uvicorn · Pydantic · joblib
+REST API, model serving, schema
+validation
+Frontend
+React · Leaflet · GeoJSON
+Interactive map, risk panel, relocation table
+Storage
+CSV / GeoJSON (prototype) → PostGIS (production)
+Feature store, spatial data
+--- page 6 ---
+GeoSentinel
+Product Requirements Document
+Page 6
+CONFIDENTIAL — Internal Use Only
+GeoSentinel  SIH26001 + SIH26191
+DevOps
+Docker · GitHub
+Containerisation, version control
+--- page 7 ---
+GeoSentinel
+Product Requirements Document
+Page 7
+CONFIDENTIAL — Internal Use Only
+GeoSentinel  SIH26001 + SIH26191
+6. Functional Requirements
+6.1 ML Risk Model (Step 3 — Friend's Scope)
+Documented here as a contract your GIS/API work depends on.
+ FR-ML-01: Accept features [slope_deg, rainfall_7d_mm, elevation_m, soil_code, history_density] per
+village.
+ FR-ML-02: Output a continuous risk_score ∈ [0, 1] for each village.
+ FR-ML-03: Classify villages as LOW (< 0.4), MEDIUM (0.4–0.7), or CRITICAL (> 0.7). Threshold must be
+configurable.
+ FR-ML-04: Report precision, recall, F1-score, and ROC-AUC on a held-out test set.
+ FR-ML-05: Save model and preprocessing pipeline together as a single joblib artifact.
+ FR-ML-06: Provide SHAP feature-importance values for any single prediction on request.
+ FR-ML-07: Prevent data leakage — use time/geographic splits, not random row splits.
+6.2 GIS Relocation Engine (Step 4 — Your Scope)
+ FR-GIS-01: Accept a list of CRITICAL villages (risk_score > threshold) with population and geometry.
+ FR-GIS-02: Load candidate_sites.geojson. Apply hard filters — reject any site that: (a) overlaps a
+landslide/hazard zone, (b) overlaps a flood-exclusion zone, (c) has slope_deg above the configured limit,
+(d) has no road access, (e) has usable_area_m2 below minimum.
+ FR-GIS-03: Score remaining sites: 0.30×safety + 0.25×road_access + 0.20×usable_area + 0.15×distance
++ 0.10×infrastructure. Weights must be configurable via a config file.
+ FR-GIS-04: Return the top 3 sites per critical village, each with: site_id, score, capacity_people,
+distance_km, access_road, filter_reason.
+ FR-GIS-05: All distance calculations must use a projected CRS (not WGS84 degrees).
+ FR-GIS-06: Output must be deterministic for the same input.
+6.3 Population & Capacity Allocation (Step 5 — Your Scope)
+ FR-CAP-01: Capacity formula: capacity_people = floor(usable_area_m2 / area_per_person_m2). Default
+25 m²/person — configurable.
+ FR-CAP-02: Sum affected population across all CRITICAL villages.
+ FR-CAP-03: Allocate to ranked sites in order; never assign more than site capacity.
+ FR-CAP-04: Explicitly report any unallocated remainder — never silently drop people.
+ FR-CAP-05: Allocation must be idempotent — same inputs always produce same outputs.
+6.4 FastAPI Backend (Step 6 — Your Scope)
+Six mandatory endpoints:
+Method
+Endpoint
+Description
+ID
+--- page 8 ---
+GeoSentinel
+Product Requirements Document
+Page 8
+CONFIDENTIAL — Internal Use Only
+GeoSentinel  SIH26001 + SIH26191
+POST
+/predict-risk
+Trigger XGBoost inference; return risk scores per village
+FR-API-01
+GET
+/villages
+Return villages GeoJSON with current risk scores
+FR-API-02
+GET
+/affected-population
+Return CRITICAL villages + total affected population count
+FR-API-03
+GET
+/safe-locations
+Return ranked top-3 sites with score and capacity
+FR-API-04
+POST
+/relocation-plan
+Run capacity allocation; return assignment JSON
+FR-API-05
+GET
+/map-geojson
+Bundle all map layers (villages, sites, roads) into one response
+FR-API-06
+ FR-API-07: All endpoints return JSON with HTTP 200 on success; structured error response on failure.
+ FR-API-08: Invalid or missing input fields return HTTP 422 with field-level validation messages.
+ FR-API-09: /docs (Swagger UI) must be accessible and accurate.
+ FR-API-10: At least one automated pytest test per endpoint must pass before demo day.
+6.5 React + Leaflet Dashboard (Step 7 — Your Scope)
+ FR-UI-01: Display a full-screen interactive map centred on the study district.
+ FR-UI-02: Villages coloured by risk tier: GREEN (low) · AMBER (medium) · RED (critical).
+ FR-UI-03: Rainfall input slider (0–400 mm) triggers POST /predict-risk and updates the map without page
+reload.
+ FR-UI-04: Side panel displays: current risk score, status badge, affected village count, total affected
+population.
+ FR-UI-05: Relocation table shows top-3 sites ranked by score with capacity and distance columns.
+ FR-UI-06: Map layers toggle: risk zones, villages, historical landslides, roads, candidate sites, relocation
+sites.
+ FR-UI-07: Offline mode: model, demo GeoJSON, and map tiles must work without internet access on
+demo day.
+ FR-UI-08: Clicking a village popup shows the 5 feature values behind its prediction (SHAP support
+optional but recommended).
+--- page 9 ---
+GeoSentinel
+Product Requirements Document
+Page 9
+CONFIDENTIAL — Internal Use Only
+GeoSentinel  SIH26001 + SIH26191
+7. Data Requirements
+7.1 Input Files — Contract Between Team Members
+These are the exact files your friend must deliver to you before you begin Steps 4–7:
+File
+Required Columns / Fields
+Format
+modelling_table.csv
+village_id, slope_deg, rainfall_7d_mm, elevation_m, soil_code
+(int), history_density, label (0/1)
+CSV
+villages.geojson
+id, name, population, geometry (polygon/point), risk_score (after
+model runs)
+GeoJSON
+candidate_sites.geojson
+site_id, usable_area_m2, has_road_access (bool),
+in_flood_zone (bool), in_hazard_zone (bool), slope_deg,
+geometry
+GeoJSON
+study_area.geojson
+Single polygon — district boundary used for clipping
+GeoJSON
+roads.geojson
+road geometry for routing and access checks
+GeoJSON
+7.2 External Data Sources
+Source
+Data Type
+Resolution
+License
+NASA GPM-IMERG
+7-day rainfall accumulation
+0.1° / 30 min
+Open
+Copernicus DEM
+Elevation / slope derivation
+30 m
+Open
+ISRO Landslide Atlas
+Historical events 1998–2022
+Point
+Govt open
+WorldPop India
+Population density
+100 m
+CC-BY 4.0
+OpenStreetMap
+Roads, shelters, buildings
+Vector
+ODbL
+ESA WorldCover
+Land cover / vegetation
+10 m
+CC-BY
+NASA SMAP L3
+Soil moisture (pilot+)
+9 km
+CC-BY
+IMD Gridded Rainfall
+Daily rain 1901–present
+0.25°
+Govt open
+8. Non-Functional Requirements
+ID
+Category
+Requirement
+Prototype
+NFR-01
+Performance
+End-to-end prediction + relocation plan latency
+< 30 s
+NFR-02
+Accuracy
+XGBoost ROC-AUC on held-out test set
+≥ 0.75
+--- page 10 ---
+GeoSentinel
+Product Requirements Document
+Page 10
+CONFIDENTIAL — Internal Use Only
+GeoSentinel  SIH26001 + SIH26191
+NFR-03
+Reliability
+Complete demo pipeline runs from one button/slider
+100%
+NFR-04
+Offline
+Dashboard + model works with no internet
+Required
+NFR-05
+Safety
+System must never claim a landslide will / will not occur
+Required
+NFR-06
+Configurability
+Risk threshold, suitability weights, m²/person in config
+Required
+NFR-07
+Transparency
+Feature inputs shown behind every prediction
+Required
+NFR-08
+Scalability
+Architecture supports swap from GeoJSON to PostGIS
+Design only
+NFR-09
+Testing
+≥1 automated pytest per API endpoint
+Required
+NFR-10
+Labelling
+Demo/synthetic data clearly labelled as such
+Required
+--- page 11 ---
+GeoSentinel
+Product Requirements Document
+Page 11
+CONFIDENTIAL — Internal Use Only
+GeoSentinel  SIH26001 + SIH26191
+9. Team Responsibilities
+9.1 Friend's Deliverables (Steps 1–3)
+ Step 1: Data collection — DEM, rainfall, soil, landslide inventory, villages, roads
+ Step 2: Geospatial processing — clip, reproject, derive slope, aggregate 7-day rainfall, spatial join →
+modelling_table.csv
+ Step 3: XGBoost model — train, evaluate (ROC-AUC ≥ 0.75), save pipeline as xgb_pipeline.pkl
+ Hand-off deliverables: modelling_table.csv · villages.geojson · candidate_sites.geojson ·
+study_area.geojson · roads.geojson · xgb_pipeline.pkl
+9.2 Your Deliverables (Steps 4–7)
+ Step 4: GIS suitability engine (gis/suitability.py) — hard filters + weighted scoring → top-3 sites
+ Step 5: Population + capacity allocation — floor(area/25) formula → allocation.json, never exceed capacity
+ Step 6: FastAPI backend (backend/main.py) — 6 endpoints, pytest suite, /docs UI
+ Step 7: React + Leaflet dashboard — risk map, rainfall slider, relocation table, offline bundle
+ Day 13: Full integration test — single slider → predict → warn → decide → relocate → map update
+ Day 14: Offline backup bundle — precomputed GeoJSON, cached tiles, local model load
+ Day 15: UI polish + demo rehearsal
+9.3 Handoff Contract
+ Critical Hand-Off Checklist
+1. modelling_table.csv delivered and validated — column names confirmed
+2. CRS agreed (e.g. EPSG:32644) — all files in the same projection
+3. soil_code encoding documented (integer map provided)
+4. xgb_pipeline.pkl loads with joblib.load() in a fresh virtualenv
+5. villages.geojson includes population field
+6. candidate_sites.geojson includes all boolean filter fields
+10. 15-Day MVP Roadmap
+Days
+Task
+Owner
+Deliverable
+1–2
+Region selection, repo setup, first datasets
+Both
+GitHub repo + data folder
+3–4
+DEM + slope processing, rainfall aggregation
+Friend
+terrain.py working
+--- page 12 ---
+GeoSentinel
+Product Requirements Document
+Page 12
+CONFIDENTIAL — Internal Use Only
+GeoSentinel  SIH26001 + SIH26191
+5–6
+Modelling table build + XGBoost train/eval
+Friend
+xgb_pipeline.pkl + metrics
+7
+Risk map layer, village GeoJSON with risk scores
+Friend
+villages.geojson
+8
+Candidate-site hard filters + suitability scoring
+You
+suitability.py
+9
+Population capacity formula + allocation logic
+You
+allocation.json schema
+10
+FastAPI — all 6 endpoints + pytest suite
+You
+backend/main.py + tests/
+11–12
+React + Leaflet dashboard — map, slider, panels
+You
+frontend/ working locally
+13
+Full end-to-end integration test
+Both
+Single-button demo works
+14
+Offline bundle + edge-case testing
+You
+Demo runs without internet
+15
+UI polish, presentation rehearsal, checklist review
+Both
+SIH submission ready
+Orange rows = your primary responsibility (Days 8–15).
+--- page 13 ---
+GeoSentinel
+Product Requirements Document
+Page 13
+CONFIDENTIAL — Internal Use Only
+GeoSentinel  SIH26001 + SIH26191
+11. Testing Requirements
+11.1 ML Layer
+ Model loads from xgb_pipeline.pkl without error in fresh environment
+ All predictions are in range [0, 1]
+ A village with slope=35°, rainfall=250mm scores > 0.7 (sanity check)
+ A village with slope=5°, rainfall=20mm scores < 0.3 (sanity check)
+ Threshold status (CRITICAL / MEDIUM / LOW) is correct for edge values 0.699 and 0.701
+ Preprocessing pipeline applies same soil_code encoding as training
+11.2 GIS / Relocation Layer
+ Sites inside hazard zone are excluded from results
+ Sites with no road access are excluded
+ Distance calculations use projected CRS — not degrees
+ Suitability scores are between 0 and 1
+ Exactly 3 sites returned (or fewer with clear reason if < 3 pass filters)
+ Allocation never assigns more than site capacity
+ All affected people are assigned or explicitly flagged as unallocated
+ Ranking is deterministic — same input always produces same ranked list
+ GeoJSON output renders without error in Leaflet
+11.3 API Layer
+ POST /predict-risk with valid payload returns 200 + risk_score per village
+ POST /predict-risk with missing field returns 422 + field name
+ GET /safe-locations returns 3 sites ordered by score descending
+ POST /relocation-plan population assignments sum to affected total (minus unallocated)
+ GET /map-geojson returns valid GeoJSON parseable by JSON.parse()
+ /docs Swagger UI loads and all endpoints are documented
+11.4 Demo Acceptance Test
+ Final Demo Must Pass All Steps Without Manual Intervention
+1. Select prepared district → baseline risk map appears
+2. Set rainfall slider to HIGH (e.g. 200 mm) → click RUN PREDICTION
+3. Critical villages appear in RED on the map
+4. Affected population count updates in side panel
+--- page 14 ---
+GeoSentinel
+Product Requirements Document
+Page 14
+CONFIDENTIAL — Internal Use Only
+GeoSentinel  SIH26001 + SIH26191
+5. Click PLAN RELOCATION → unsafe sites disappear from map
+6. Top 3 sites appear ranked with score, capacity, distance
+7. Allocation table shows Site A → N people, Site B → N people, Site C → N people
+8. No manual database edits or terminal commands during the demo
+12. Live Demo Scenario
+The demo follows a storytelling arc judges can follow without technical background. Rehearse this sequence
+exactly and time it to under 4 minutes.
+ Open dashboard — show baseline risk map (all villages GREEN or AMBER, no rain event).
+ Narrate the threat — 'A deep depression is forming in the Bay of Bengal. Forecast: 180 mm over 7 days
+across West Khasi Hills.'
+ Move rainfall slider to 180 mm → click RUN PREDICTION.
+ Show risk map update — 5 villages turn RED (CRITICAL). Side panel shows: Risk 0.83, Affected 3,240
+people.
+ Click PLAN RELOCATION — system filters out 2 candidate sites (flood zone, no road access).
+ Show top-3 sites — Site A (91%, 800 people, 4.2 km), Site B (84%, 500 people, 6.8 km), Site C (78%,
+300 people, 9.1 km).
+ Show allocation — A → 800, B → 500, C → 200. Unallocated: 1,740. Narrate: 'Phase 2 sites cover
+remainder.'
+ Click a village — popup shows 5 feature values: slope 32°, rainfall 184 mm, elevation 1,450 m, soil 2,
+density 0.71.
+ Increase slider to 320 mm — show more villages turning CRITICAL (stress-test live).
+ Close with — 'Same pipeline, real IMD data, scaled to all NER districts in Stage 2.'
+--- page 15 ---
+GeoSentinel
+Product Requirements Document
+Page 15
+CONFIDENTIAL — Internal Use Only
+GeoSentinel  SIH26001 + SIH26191
+13. Risks & Mitigations
+Risk
+Probabil
+ity
+Impact
+Mitigation
+Friend's modelling table
+delayed or missing columns
+Medium
+High
+Define column contract now. You can mock 10-village
+synthetic CSV on Day 7 to unblock Steps 4–7 independently.
+Insufficient labelled landslide
+events → poor ROC-AUC
+High
+Medium
+Use clearly labelled synthetic data. Demo emphasis on
+pipeline, not model accuracy. State limitation explicitly.
+GIS distance/area calc uses
+wrong CRS → wrong
+capacities
+Medium
+High
+Write a CRS assertion at the top of suitability.py. Unit test with
+known distance.
+FastAPI ↔ React integration
+broken on demo day
+Medium
+High
+Day 13 full integration test. Keep pre-run cached JSON
+responses as fallback if API is down.
+No internet during demo → tile
+layer fails
+Medium
+Medium
+Pre-cache OpenStreetMap tiles offline. Use mbtiles or local tile
+server.
+< 3 candidate sites pass hard
+filters → empty relocation table
+Low
+High
+Prepare demo data guaranteeing ≥ 5 candidate sites, at least 3
+passing all filters.
+Over-claiming — judges ask if
+system guarantees landslide
+prediction
+High
+High
+Label all outputs as 'decision-support'. Add disclaimer in UI.
+Never use the word 'guarantee'.
+14. SIH Submission Checklist
+Item
+Description
+Status
+Working Prototype
+End-to-end demo: model + map + relocation — no static slides
+[ ]
+Source Code Repo
+GitHub repo with README, requirements.txt, folder structure
+[ ]
+Presentation Slides
+6–10 slides: problem, solution, demo, roadmap, team
+[ ]
+Demo Script
+Written walkthrough of live demo scenario (Section 12 of this PRD)
+[ ]
+Concept Note
+How SIH26001 + SIH26191 are combined (warn + relocate)
+[ ]
+Innovation Highlight
+Last-mile relocation angle emphasised
+[ ]
+Data Labels
+All demo/synthetic data clearly marked as not operational
+[ ]
+Offline Bundle
+Demo runs without internet — model + tiles + GeoJSON local
+[ ]
+Metric Report
+Precision, Recall, F1, ROC-AUC printed in README or slides
+[ ]
+--- page 16 ---
+GeoSentinel
+Product Requirements Document
+Page 16
+CONFIDENTIAL — Internal Use Only
+GeoSentinel  SIH26001 + SIH26191
+Team Bio
+Short description of each member's role and expertise
+[ ]
+15. Glossary & References
+15.1 Key Terms
+ DEM: Digital Elevation Model — raster grid of terrain heights.
+ CRS: Coordinate Reference System — projection used for geospatial data.
+ XGBoost: Extreme Gradient Boosting — ensemble ML algorithm used for risk classification.
+ SHAP: SHapley Additive exPlanations — method for explaining individual ML predictions.
+ ROC-AUC: Area Under the Receiver Operating Characteristic Curve — primary model evaluation metric.
+ GeoJSON: Open standard JSON format for encoding geographic data structures.
+ Hard Filter: A site exclusion rule with no override — site is rejected if condition is true.
+ Suitability Score: Weighted composite score (0–1) ranking candidate relocation sites.
+ NER: North Eastern Region of India (Assam, Meghalaya, Nagaland, Manipur, Mizoram, Tripura,
+Arunachal Pradesh, Sikkim).
+ SDRF / NDRF: State / National Disaster Response Force.
+15.2 References
+ NASA GPM-IMERG: https://gpm.nasa.gov/data/imerg
+ Copernicus DEM: https://dataspace.copernicus.eu/explore-data/data-collections/COP-DEM
+ ISRO Landslide Atlas of India (1998–2022): https://www.nrsc.gov.in
+ XGBoost Python docs: https://xgboost.readthedocs.io/en/stable/python/
+ FastAPI tutorial: https://fastapi.tiangolo.com/tutorial/
+ Leaflet API reference: https://leafletjs.com/reference
+ WorldPop India population grids: https://www.worldpop.org
+ ESA WorldCover 10m land cover: https://esa-worldcover.org
+ SHAP library: https://shap.readthedocs.io
+ OpenStreetMap: https://www.openstreetmap.org (ODbL license)
+ GeoSentinel PRD v1.0 — Prepared for SIH 2026 Internal Round — September 2026
+ This document is a living specification. Update version and date on each revision.

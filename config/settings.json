@@ -1,0 +1,16 @@
+{
+  "critical_risk_threshold": 0.70,
+  "max_site_slope_deg": 8,
+  "min_usable_area_m2": 1000,
+  "area_per_person_m2": 25,
+  "suitability_weights": {
+    "safety": 0.30,
+    "road_access": 0.25,
+    "usable_area": 0.20,
+    "distance": 0.15,
+    "infrastructure": 0.10
+  },
+  "demo_data_disclaimer": "DEMO/SYNTHETIC DATA — NOT VALIDATED FOR OPERATIONAL EVACUATION.",
+  "distance_method": "geodesic_wgs84",
+  "study_crs": "EPSG:4326"
+}

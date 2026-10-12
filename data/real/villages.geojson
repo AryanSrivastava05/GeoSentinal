@@ -1,0 +1,1841 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0003",
+        "name": "V0003",
+        "population": 500,
+        "risk_score": 0.0120634,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.90289891107265,
+          25.358129473558034
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0006",
+        "name": "V0006",
+        "population": 500,
+        "risk_score": 0.0586317,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo. Regenerated as single deterministic point after fixing a duplicate-row bug (this village had multiple historical-event rows in predictions_new.csv)."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.38664666935209,
+          25.073123766058053
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0009",
+        "name": "V0009",
+        "population": 500,
+        "risk_score": 0.9084762,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.21988265021642,
+          25.2153962145549
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0019",
+        "name": "V0019",
+        "population": 500,
+        "risk_score": 0.3068324,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo. Regenerated as single deterministic point after fixing a duplicate-row bug (this village had multiple historical-event rows in predictions_new.csv)."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.17455940759808,
+          25.97204256744756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0020",
+        "name": "V0020",
+        "population": 500,
+        "risk_score": 0.023585,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo. Regenerated as single deterministic point after fixing a duplicate-row bug (this village had multiple historical-event rows in predictions_new.csv)."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.25475092321767,
+          25.37577688330365
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0024",
+        "name": "V0024",
+        "population": 500,
+        "risk_score": 0.0597742,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.38466291155964,
+          25.313941872559706
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0027",
+        "name": "V0027",
+        "population": 500,
+        "risk_score": 0.0208653,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.67566251390502,
+          25.32005883976677
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0031",
+        "name": "V0031",
+        "population": 500,
+        "risk_score": 0.9067711,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.24670582695676,
+          25.543967145203126
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0033",
+        "name": "V0033",
+        "population": 500,
+        "risk_score": 0.028142,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.15770773820562,
+          25.44228780037022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0034",
+        "name": "V0034",
+        "population": 500,
+        "risk_score": 0.1354157,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.06604860538835,
+          25.740119637895223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0035",
+        "name": "V0035",
+        "population": 500,
+        "risk_score": 0.2083016,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.36945037684265,
+          25.4684294859264
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0041",
+        "name": "V0041",
+        "population": 500,
+        "risk_score": 0.5663233,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.06060111158212,
+          25.495013072250376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0042",
+        "name": "V0042",
+        "population": 500,
+        "risk_score": 0.6230905,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.15833972897917,
+          25.147119311237475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0043",
+        "name": "V0043",
+        "population": 500,
+        "risk_score": 0.0386585,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.93785621761796,
+          25.469273699679768
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0046",
+        "name": "V0046",
+        "population": 500,
+        "risk_score": 0.9530958,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo. Regenerated as single deterministic point after fixing a duplicate-row bug (this village had multiple historical-event rows in predictions_new.csv)."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.66318023000466,
+          25.62869080941974
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0060",
+        "name": "V0060",
+        "population": 500,
+        "risk_score": 0.1497627,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.27328771875318,
+          25.618836786130288
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0065",
+        "name": "V0065",
+        "population": 500,
+        "risk_score": 0.2307495,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.7373006678392,
+          25.834731466756416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0069",
+        "name": "V0069",
+        "population": 500,
+        "risk_score": 0.0337641,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.99839714452413,
+          25.461757757788018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0075",
+        "name": "V0075",
+        "population": 500,
+        "risk_score": 0.8891286,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo. Regenerated as single deterministic point after fixing a duplicate-row bug (this village had multiple historical-event rows in predictions_new.csv)."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.67808565708745,
+          25.157895720257585
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0076",
+        "name": "V0076",
+        "population": 500,
+        "risk_score": 0.0568979,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.6541840571377,
+          25.825952905381932
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0078",
+        "name": "V0078",
+        "population": 500,
+        "risk_score": 0.0205164,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.57623283249237,
+          25.156400222463407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0079",
+        "name": "V0079",
+        "population": 500,
+        "risk_score": 0.1112855,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.61828926467888,
+          25.748075156696252
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0080",
+        "name": "V0080",
+        "population": 500,
+        "risk_score": 0.4376742,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.52670894130951,
+          25.518467993543663
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0105",
+        "name": "V0105",
+        "population": 500,
+        "risk_score": 0.0601109,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.7350705611254,
+          25.74147123507313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0106",
+        "name": "V0106",
+        "population": 500,
+        "risk_score": 0.7877989,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo. Regenerated as single deterministic point after fixing a duplicate-row bug (this village had multiple historical-event rows in predictions_new.csv)."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.84823738859954,
+          25.577181760086166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0117",
+        "name": "V0117",
+        "population": 500,
+        "risk_score": 0.0114453,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.23857595457292,
+          25.33756314408697
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0130",
+        "name": "V0130",
+        "population": 500,
+        "risk_score": 0.132611,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.86390522865779,
+          25.93451455402891
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0135",
+        "name": "V0135",
+        "population": 500,
+        "risk_score": 0.0727361,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.8682174419754,
+          25.452615893825367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0138",
+        "name": "V0138",
+        "population": 500,
+        "risk_score": 0.0151979,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.79689898148371,
+          25.625577330109905
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0143",
+        "name": "V0143",
+        "population": 500,
+        "risk_score": 0.0350418,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.69101156872136,
+          25.257908758379756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0146",
+        "name": "V0146",
+        "population": 500,
+        "risk_score": 0.0321334,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.35485348925933,
+          25.158705122742177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0151",
+        "name": "V0151",
+        "population": 500,
+        "risk_score": 0.0125869,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.28717609986641,
+          25.47737631257841
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0152",
+        "name": "V0152",
+        "population": 500,
+        "risk_score": 0.0537608,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.1769082913771,
+          25.618234681232234
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0158",
+        "name": "V0158",
+        "population": 500,
+        "risk_score": 0.0830353,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.98815972118963,
+          25.68435686155109
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0160",
+        "name": "V0160",
+        "population": 500,
+        "risk_score": 0.0361328,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.31760226053564,
+          25.451241367954417
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0161",
+        "name": "V0161",
+        "population": 500,
+        "risk_score": 0.8303096,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo. Regenerated as single deterministic point after fixing a duplicate-row bug (this village had multiple historical-event rows in predictions_new.csv)."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.32409300162354,
+          25.897409012913045
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0164",
+        "name": "V0164",
+        "population": 500,
+        "risk_score": 0.0323026,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo. Regenerated as single deterministic point after fixing a duplicate-row bug (this village had multiple historical-event rows in predictions_new.csv)."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.69167607279515,
+          25.105682720579072
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0166",
+        "name": "V0166",
+        "population": 500,
+        "risk_score": 0.0439981,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.14263354986302,
+          25.72252899506099
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0169",
+        "name": "V0169",
+        "population": 500,
+        "risk_score": 0.0151979,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.39255332381077,
+          25.252637068281444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0175",
+        "name": "V0175",
+        "population": 500,
+        "risk_score": 0.0321334,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo. Regenerated as single deterministic point after fixing a duplicate-row bug (this village had multiple historical-event rows in predictions_new.csv)."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.11683187424971,
+          25.277762953337152
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0185",
+        "name": "V0185",
+        "population": 500,
+        "risk_score": 0.0307112,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.64922921095291,
+          25.302018281363985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0190",
+        "name": "V0190",
+        "population": 500,
+        "risk_score": 0.018772,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.22304687436731,
+          25.366105730869233
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0192",
+        "name": "V0192",
+        "population": 500,
+        "risk_score": 0.0947752,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.10670586915505,
+          25.32987347404766
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0196",
+        "name": "V0196",
+        "population": 500,
+        "risk_score": 0.1215144,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo. Regenerated as single deterministic point after fixing a duplicate-row bug (this village had multiple historical-event rows in predictions_new.csv)."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.80431760977916,
+          25.952446816495996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0206",
+        "name": "V0206",
+        "population": 500,
+        "risk_score": 0.003276,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.07446280108965,
+          25.55928629931553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0207",
+        "name": "V0207",
+        "population": 500,
+        "risk_score": 0.085296,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.080960780787,
+          25.622274114978946
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0213",
+        "name": "V0213",
+        "population": 500,
+        "risk_score": 0.251516,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.26620163744956,
+          25.234465549437292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0217",
+        "name": "V0217",
+        "population": 500,
+        "risk_score": 0.020554,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.41203361575148,
+          25.957387310294532
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0222",
+        "name": "V0222",
+        "population": 500,
+        "risk_score": 0.0094274,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.48697705322382,
+          25.413995219879283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0232",
+        "name": "V0232",
+        "population": 500,
+        "risk_score": 0.0534068,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.03321979627768,
+          25.681362572139747
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0233",
+        "name": "V0233",
+        "population": 500,
+        "risk_score": 0.0745393,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.47941416619055,
+          25.965668961548246
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0247",
+        "name": "V0247",
+        "population": 500,
+        "risk_score": 0.064922,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.96940133192328,
+          25.24396192727003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0251",
+        "name": "V0251",
+        "population": 500,
+        "risk_score": 0.0444821,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.2738694394092,
+          25.537546901728263
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0263",
+        "name": "V0263",
+        "population": 500,
+        "risk_score": 0.0219235,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.27997922815811,
+          25.79897840955804
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0270",
+        "name": "V0270",
+        "population": 500,
+        "risk_score": 0.7131482,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.03363848504951,
+          25.47830458295198
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0275",
+        "name": "V0275",
+        "population": 500,
+        "risk_score": 0.0192547,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.57894907558666,
+          25.234615326752756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0289",
+        "name": "V0289",
+        "population": 500,
+        "risk_score": 0.0061179,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.41821917294658,
+          25.432430101516502
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0314",
+        "name": "V0314",
+        "population": 500,
+        "risk_score": 0.9342238,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo. Regenerated as single deterministic point after fixing a duplicate-row bug (this village had multiple historical-event rows in predictions_new.csv)."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.04372950461001,
+          25.40592602026186
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0321",
+        "name": "V0321",
+        "population": 500,
+        "risk_score": 0.063905,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.60161452888944,
+          25.30276723207092
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0342",
+        "name": "V0342",
+        "population": 500,
+        "risk_score": 0.0323026,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo. Regenerated as single deterministic point after fixing a duplicate-row bug (this village had multiple historical-event rows in predictions_new.csv)."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.79956997973903,
+          25.73769778817047
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0344",
+        "name": "V0344",
+        "population": 500,
+        "risk_score": 0.0355541,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.58064209262949,
+          25.672719539093087
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0347",
+        "name": "V0347",
+        "population": 500,
+        "risk_score": 0.0283517,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.72970102261226,
+          25.904513925592
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0358",
+        "name": "V0358",
+        "population": 500,
+        "risk_score": 0.0076404,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.25386620753909,
+          25.471234258386055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0362",
+        "name": "V0362",
+        "population": 500,
+        "risk_score": 0.0191533,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo. Regenerated as single deterministic point after fixing a duplicate-row bug (this village had multiple historical-event rows in predictions_new.csv)."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.47585345924824,
+          25.319741868569253
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0370",
+        "name": "V0370",
+        "population": 500,
+        "risk_score": 0.0222112,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.97019750713163,
+          25.65832360862027
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0378",
+        "name": "V0378",
+        "population": 500,
+        "risk_score": 0.549855,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.00591879007318,
+          25.315499662911826
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0379",
+        "name": "V0379",
+        "population": 500,
+        "risk_score": 0.2352979,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.39206266345393,
+          25.51940582470036
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0382",
+        "name": "V0382",
+        "population": 500,
+        "risk_score": 0.0349662,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.88992509557616,
+          25.752066550099602
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0388",
+        "name": "V0388",
+        "population": 500,
+        "risk_score": 0.1903727,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo. Regenerated as single deterministic point after fixing a duplicate-row bug (this village had multiple historical-event rows in predictions_new.csv)."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.4068044523818,
+          25.608028836994617
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0390",
+        "name": "V0390",
+        "population": 500,
+        "risk_score": 0.5211358,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.26191121221045,
+          25.392666330123415
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0392",
+        "name": "V0392",
+        "population": 500,
+        "risk_score": 0.0207008,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.19461043551023,
+          25.242399072364275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0394",
+        "name": "V0394",
+        "population": 500,
+        "risk_score": 0.0201322,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.54192966807761,
+          25.199803204036634
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0396",
+        "name": "V0396",
+        "population": 500,
+        "risk_score": 0.0448375,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.47559215078613,
+          25.56951351789623
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0399",
+        "name": "V0399",
+        "population": 500,
+        "risk_score": 0.0041895,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.74128896715835,
+          25.322588301256
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0401",
+        "name": "V0401",
+        "population": 500,
+        "risk_score": 0.1071658,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.88856156348987,
+          25.30066210457578
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0402",
+        "name": "V0402",
+        "population": 500,
+        "risk_score": 0.8838223,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.64402435587115,
+          25.400535888196266
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0406",
+        "name": "V0406",
+        "population": 500,
+        "risk_score": 0.0253063,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.65558252330754,
+          25.917144627505277
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0423",
+        "name": "V0423",
+        "population": 500,
+        "risk_score": 0.0410843,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.03395718240138,
+          25.58470219717993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0435",
+        "name": "V0435",
+        "population": 500,
+        "risk_score": 0.0041662,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.7569630006164,
+          25.566627669602774
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0436",
+        "name": "V0436",
+        "population": 500,
+        "risk_score": 0.2088503,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.45615897961883,
+          25.661038925924345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0439",
+        "name": "V0439",
+        "population": 500,
+        "risk_score": 0.0613175,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.88817666392502,
+          25.427456263769404
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0450",
+        "name": "V0450",
+        "population": 500,
+        "risk_score": 0.91138,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo. Regenerated as single deterministic point after fixing a duplicate-row bug (this village had multiple historical-event rows in predictions_new.csv)."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.44684836063492,
+          25.673090374468554
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0452",
+        "name": "V0452",
+        "population": 500,
+        "risk_score": 0.435128,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.37943609976122,
+          25.35502350092248
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0459",
+        "name": "V0459",
+        "population": 500,
+        "risk_score": 0.0350418,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.40943367993454,
+          25.91469662258638
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0460",
+        "name": "V0460",
+        "population": 500,
+        "risk_score": 0.0272258,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.92152722913005,
+          25.276699204302933
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0471",
+        "name": "V0471",
+        "population": 500,
+        "risk_score": 0.0651008,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.9452972376907,
+          25.511735165452276
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0477",
+        "name": "V0477",
+        "population": 500,
+        "risk_score": 0.0746369,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.86937256844399,
+          25.674424760967717
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0498",
+        "name": "V0498",
+        "population": 500,
+        "risk_score": 0.0298735,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.12490398469345,
+          25.960671061272432
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0500",
+        "name": "V0500",
+        "population": 500,
+        "risk_score": 0.0119833,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.89296376098034,
+          25.62321270760341
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0511",
+        "name": "V0511",
+        "population": 500,
+        "risk_score": 0.1027031,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.98984932123757,
+          25.665150909615075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0525",
+        "name": "V0525",
+        "population": 500,
+        "risk_score": 0.0043879,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.55650362612114,
+          25.993178006098866
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0526",
+        "name": "V0526",
+        "population": 500,
+        "risk_score": 0.0054924,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.28688201546994,
+          25.36657634594559
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0527",
+        "name": "V0527",
+        "population": 500,
+        "risk_score": 0.1498846,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.43628087058462,
+          25.075824960632907
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0532",
+        "name": "V0532",
+        "population": 500,
+        "risk_score": 0.065679,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.41611144573282,
+          25.582455143173735
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0539",
+        "name": "V0539",
+        "population": 500,
+        "risk_score": 0.0498111,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.18893783900141,
+          25.34493540038657
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0542",
+        "name": "V0542",
+        "population": 500,
+        "risk_score": 0.0083027,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo. Regenerated as single deterministic point after fixing a duplicate-row bug (this village had multiple historical-event rows in predictions_new.csv)."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.01379756298631,
+          25.83519211808403
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0543",
+        "name": "V0543",
+        "population": 500,
+        "risk_score": 0.0172482,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.46071130489585,
+          25.4715711097328
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0546",
+        "name": "V0546",
+        "population": 500,
+        "risk_score": 0.0181383,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.05841607808819,
+          25.270866749206558
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0550",
+        "name": "V0550",
+        "population": 500,
+        "risk_score": 0.0163478,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.68557115623524,
+          25.20881381368955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0551",
+        "name": "V0551",
+        "population": 500,
+        "risk_score": 0.0524828,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.91647318121105,
+          25.53198121442559
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0583",
+        "name": "V0583",
+        "population": 500,
+        "risk_score": 0.0876093,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.53900154255791,
+          25.38029324738179
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "V0591",
+        "name": "V0591",
+        "population": 500,
+        "risk_score": 0.0851513,
+        "data_status": "prototype_location",
+        "source_note": "Location not present in supplied ML table; generated only for GIS demo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.37758226657508,
+          25.449795021176705
+        ]
+      }
+    }
+  ]
+}

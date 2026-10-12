@@ -1,0 +1,31 @@
+GeoSentinel — soil_code legend (PLACEHOLDER, not yet filled in)
+
+modelling_table.csv contains a "soil_code" column (integer). Its actual
+meaning (which soil type each number represents) is not currently
+documented anywhere in the handover materials.
+
+Observed values in the current modelling_table.csv: 0 and 4
+(only two distinct values appear; there may be other codes, e.g. 1-3 or 5+,
+used elsewhere in the full dataset or by whoever generated this table).
+
+soil_code -> meaning
+0  -> UNKNOWN (not documented)
+4  -> UNKNOWN (not documented)
+
+Why this matters:
+- The GIS/relocation logic and any model explanation (SHAP, feature
+  breakdown shown in the UI) will show "soil_code: 4" to a user with no
+  indication of what that means.
+- Judges or teammates reading the modelling table can't sanity-check
+  whether the codes make sense for the region without this legend.
+
+Action needed before final submission:
+- Find out from whoever built modelling_table.csv what encoding was used
+  (e.g. an ESA WorldCover / soil classification scheme), or
+- If no original mapping exists, define one explicitly now (e.g.
+  0 = sandy, 4 = clay-loam) and note in the README that it was assigned
+  by the team, not sourced from an official soil dataset.
+
+Until this is filled in, treat soil_code as an opaque placeholder feature
+in any demo narration — don't state what the numbers mean if you're not
+sure, since that would be presenting an assumption as fact.

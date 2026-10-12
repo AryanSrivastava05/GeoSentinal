@@ -1,0 +1,48 @@
+{
+  "type": "FeatureCollection",
+  "name": "demo_flood_zones",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "disclaimer": "DEMO/SYNTHETIC DATA \u2014 NOT VALIDATED FOR OPERATIONAL EVACUATION.",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "zone_id": "FLD_01",
+        "name": "Demo flood exclusion polygon",
+        "data_quality": "synthetic_demo"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.327,
+              25.489
+            ],
+            [
+              91.38300000000001,
+              25.489
+            ],
+            [
+              91.38300000000001,
+              25.520999999999997
+            ],
+            [
+              91.327,
+              25.520999999999997
+            ],
+            [
+              91.327,
+              25.489
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

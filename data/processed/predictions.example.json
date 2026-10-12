@@ -1,0 +1,77 @@
+[
+  {
+    "village_id": "V001",
+    "village_name": "Nongstoin Bazar",
+    "risk_score": 0.83
+  },
+  {
+    "village_id": "V002",
+    "village_name": "Mawthawkrah",
+    "risk_score": 0.76
+  },
+  {
+    "village_id": "V003",
+    "village_name": "Mairang East",
+    "risk_score": 0.71
+  },
+  {
+    "village_id": "V004",
+    "village_name": "Markasa",
+    "risk_score": 0.7
+  },
+  {
+    "village_id": "V005",
+    "village_name": "Rambrai",
+    "risk_score": 0.42
+  },
+  {
+    "village_id": "V006",
+    "village_name": "Nongkhlaw",
+    "risk_score": 0.38
+  },
+  {
+    "village_id": "V007",
+    "village_name": "Mawshynrut",
+    "risk_score": 0.55
+  },
+  {
+    "village_id": "V008",
+    "village_name": "Pariong",
+    "risk_score": 0.61
+  },
+  {
+    "village_id": "V009",
+    "village_name": "Kynshi",
+    "risk_score": 0.33
+  },
+  {
+    "village_id": "V010",
+    "village_name": "Nongstoin West",
+    "risk_score": 0.48
+  },
+  {
+    "village_id": "V011",
+    "village_name": "Mawlangwir",
+    "risk_score": 0.29
+  },
+  {
+    "village_id": "V012",
+    "village_name": "Dommawiong",
+    "risk_score": 0.22
+  },
+  {
+    "village_id": "V013",
+    "village_name": "Nongspung",
+    "risk_score": 0.51
+  },
+  {
+    "village_id": "V014",
+    "village_name": "Mawkyrwat Gate",
+    "risk_score": 0.18
+  },
+  {
+    "village_id": "V015",
+    "village_name": "Weiloi",
+    "risk_score": 0.35
+  }
+]

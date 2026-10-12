@@ -1,0 +1,67 @@
+{
+  "type": "FeatureCollection",
+  "name": "demo_roads",
+  "disclaimer": "DEMO/SYNTHETIC DATA \u2014 NOT VALIDATED FOR OPERATIONAL EVACUATION.",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Demo NH spine",
+        "data_quality": "synthetic_demo"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.16,
+            25.45
+          ],
+          [
+            91.22,
+            25.47
+          ],
+          [
+            91.262,
+            25.5
+          ],
+          [
+            91.3,
+            25.53
+          ],
+          [
+            91.34,
+            25.56
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Demo south connector",
+        "data_quality": "synthetic_demo"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.23,
+            25.46
+          ],
+          [
+            91.255,
+            25.47
+          ],
+          [
+            91.29,
+            25.455
+          ],
+          [
+            91.33,
+            25.47
+          ]
+        ]
+      }
+    }
+  ]
+}
